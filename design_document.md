@@ -42,13 +42,16 @@ It sets a good foundation with iterations for design and implementation and will
 ## Product Definition
 ### Context Diagram
 TODO: Add picture here for context diagram
+![Context Diagram Image](/Images/.png "This is a sample image.")
 
 ### User Story/ Persona
 I am a college student who always forgets my due dates and can’t communicate effectively with my team members. If only there was one spot to see all this information, I would excel in my academic career. 
 I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they dont hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ### Use Cases
-TODO: Add picture here of use case diagram 
+TODO: Change color of this picture, make not transparent
+![Use case diagram image](/Images/UseCaseDiagram.png "Hi there :)")
+
 ### Use Case Description
 #### 1. Name: Create Account
 - Actors: User
@@ -159,8 +162,7 @@ Requirements: Must have/be in a server
 - Requirements: None
 
 ## Wireframes
-TODO: add file to repo
-WireFrame_Rough_Draft.pdf*see attached file
+See `/Design Files/WireFrame` for wire frames
 
 ## Project Organization
 ### Responsibility Matrix
