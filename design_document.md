@@ -34,12 +34,18 @@ Names: Gabe Leffew, Hamad Ahmed, Ben Lloyd
 - Time management (estimates, finishing work in a timely fashion)
 
 ## Software Process Model Description : AGILE
- We believe this is a flexible model that will enable us to make rapid changes throughout our development process. It will also allow us to react quickly as we plan to learn about our project through its duration which will present design challenges that we will need to adapt to.
-It is the de facto standard in software so this allows us to get more comfortable with the process before using it in the industry.
-We believe this is a flexible model that will enable us to make rapid changes throughout our development process.
-It sets a good foundation with iterations for design and implementation and will integrate with aspects of other methodologies such as Kanban and PERT chart
+The process model we are using for this project will be Agile. The first reason we chose Agile was that it works well with other systems. An example of this would be that we want to use a kanban board which will integrate with our sprint cycles. This in turn will help us keep up with tasks and know what to prioritize working on.
+
+Another reason for using agile is that it is a flexible model that will enable us to make rapid changes throughout our development process. It allows us to react quickly as we implement the project and we learn more about what we are making. Through its duration there will be design challenges that we will need to adapt to and Agile will help mitigate those.
+
+Agile is the de facto standard in the software industry so we chose this methodology so we can get more comfortable with the process. Learning about the agile methodogoly in a forgiving environment such as the classroom will help us become accustomed to the process and avoid common mistakes. We hope that by using Agile we can more closely create the professional quality for delivering software. 
 
 ## Product Definition
+### Actors
+User - Any person using the application that does not own a server inside the application. This is not the same as a user inside a server as that is a per sever basis.
+
+Server Admin - Any person that owns a server inside the application. They have more priveleges for a specific server but not the application as a whole.
+
 ### Context Diagram
 TODO: Add picture here for context diagram
 ![Context Diagram Image](/Images/.png "This is a sample image.")
@@ -50,7 +56,7 @@ I am a football coach and can’t keep up with my rowdy team. Some of my dogs fo
 
 ### Use Cases
 TODO: Change color of this picture, make not transparent
-![Use case diagram image](/Images/UseCaseDiagram.png "Hi there :)")
+![Use case diagram image](/Images/UseCaseDiagram.jpg "Hi there :)")
 
 ### Use Case Description
 #### 1. Name: Create Account
