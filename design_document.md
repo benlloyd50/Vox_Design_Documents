@@ -47,15 +47,13 @@ User - Any person using the application that does not own a server inside the ap
 Server Admin - Any person that owns a server inside the application. They have more priveleges for a specific server but not the application as a whole.
 
 ### Context Diagram
-TODO: Add picture here for context diagram
-![Context Diagram Image](/Images/.png "This is a sample image.")
+![Context Diagram Image](/Images/system_context.jpg "Context Diagram image")
 
 ### User Story/ Persona
 I am a college student who always forgets my due dates and can’t communicate effectively with my team members. If only there was one spot to see all this information, I would excel in my academic career. 
 I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they dont hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ### Use Cases
-TODO: Change color of this picture, make not transparent
 ![Use case diagram image](/Images/UseCaseDiagram.jpg "Hi there :)")
 
 ### Use Case Description

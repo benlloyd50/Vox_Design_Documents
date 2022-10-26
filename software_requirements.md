@@ -36,5 +36,5 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ### 4.4 Maintainability
 
 ## 5.0 Architecture
-
+![Hardware Architecture](/images/architecture.jpg)
 
