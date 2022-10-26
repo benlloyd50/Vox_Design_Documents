@@ -24,6 +24,160 @@ Our goal is to create a centralized location for collaboration in the classroom 
 
 ### <ins>As a server admin I want to: </ins>
 - Do everything that a user can do 
+- Configure my servers permissions
+- Remove users from my server
+- Delete my server
+
+## 3.1 Punch list
+- Light/Dark theme selection 
+
+## Use Cases
+### 3.2 Create Account
+- Actors: User
+- Preconditions: none
+- Flow of events:
+  1. User enters data
+  2. Data is validated
+  3. Data is stored in a database
+- Postconditions: User gets access to the homepage screen
+- Requirements: If step 2 fails, account is not created with invalid data, create account form is cleared.
+- Interface Requirments: A create account screen
+
+### 3.3 User Login
+- Actors: User and Server Admin
+- Preconditions: Must have an existing account
+- Flow of events:
+  1. User inputs login information
+  2. Input is validated 
+  3. Data is stored in a database
+- Postconditions: 
+- Requirements: If step 2 fails, display wrong login and prompt to create an account 
+- Interface requirements: A login screen
+
+### 3.4 Create Server
+- Actors: User and Server Admin
+- Preconditions: Must have an existing account
+- Flow of events:
+  1. Enter information about the server.
+  2. Data is validated
+  3. Data is stored in a database
+- Postconditions: Server is established, User becomes the server admin of the created server.
+- Requirements: If the input is invalid, display an error message about what is invalid and try again.
+- User Interface: A server creator screen
+
+### 3.5 Chat on Servers
+- Actors: Users and Server Admin
+- Preconditions: Must have/be in a server
+- Flow of events:
+  1. Select server
+  2. Enter messages in chat box
+  3. Recieve messages
+- Postcondition: None
+- Requirements: None
+- User Interface: A server chatroom
+
+### 3.6 Call on Servers
+- Actors: Users and Server Admin
+- Preconditions: Must have/be in a server
+- Flow of events:
+  1. Select server
+  2. Select User(s) to call
+  3. Start the call
+  4. Communicate
+  5. End call
+- Postcondition: Call info is displayed in chat
+- Requirements: If connection is lost during call, user cannot rejoin the call. 
+- User Interface: A server call room
+
+### 3.7 View/edit notebook
+- Actors: Users and Server Admin
+- Preconditions: Must have an account and be apart of a server
+- Flow of events:
+  1. Open notebook to view content
+  2. Make changes
+  3. Share notebook with other users
+- Postconditions: Save notebook if changes were made
+- Requirements: None
+- User Interface: Server screen, and notebook screen
+
+### 3.8 Calendar
+- Actors: Users and Server Admin 
+
+#### 3.8.1 Create event
+- Preconditions: Must have an account
+- Flow of events:
+  1. Open calendar and view content
+  2. User enters data for event 
+- Postconditions: Event is added to calender
+- Requirements: None
+- Other requirements: in order to invite users to an event, you must be in a server with them 
+- User Interface: Home page screen
+
+#### 3.8.2 Remove event 
+- Preconditions: Must have an existing event
+- Flow of events:
+  1. Select event
+  2. Click to delete
+  3. Confirm deletion 
+- Postcondition: Event is deleted from calender
+- Requirements: To update all users invited to event
+- User Interface: Home page screen
+
+
+### 3.9 Set preferences/settings
+- Actors: User and Server Admin
+- Preconditions: Must have an account
+- Flow of events:
+  1. Open settings menu
+  2. Change settings
+  3. Apply changes
+- Postconditions: Changes are saved if any were made
+- Requirements: Edit profile, application settings
+- User Interface: Settings screen
+
+### 3.10 Configure server permissions
+- Actors: Server Admin
+- Preconditions: None
+- Flow of events:
+  1. Open server settings
+  2. Configure settings
+  3. Save settings
+- Postconditions: The server preferences will be updated if anything changed.
+- Requirements: None  
+- User Interface: Server configuration screen
+
+### 3.11 Remove Users
+- Actors: Server Admin
+- Preconditions: Have users in a server
+- Flow of events:
+  1. Select user in server
+  2. Delete user from server
+  3. Confirmation on doing so
+- Postconditions: remove user from record of server
+- Requirements: None
+- User Interface: Server screen, message to confirm
+
+### 3.12 Delete Server
+- Actors: Server Admin
+- Preconditions: None
+- Flow of events:
+  1. Go to settings
+  2. Select to delete
+  3. Confirmation to delete server, mention it is not reversible 
+- Postconditions: deletes the server 
+- Requirements: None
+- User Interface: Server screen, setting screen, message to confirm
+
+### 3.13 Invite users to server
+- Actors: User and Server Admin
+- Preconditions: Must have received a code 
+- Flow of events:
+  1. Select the invite user option 
+  2. Enter username of user to invite
+- Postconditions: Sends invite notification to user asking them to join the server. 
+- Requirements: If user does not exist, invite is not send. 
+- User Interface: Server screen
+
 
 ## 4.0 Non-functional Requirments
 
