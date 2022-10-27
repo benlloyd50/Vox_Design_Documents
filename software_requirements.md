@@ -11,7 +11,7 @@ The purpose of this document is to establish a common understanding between the 
 
 ### Scope
 ![System Context Diagram](/images/system_context.jpg)
-![Use Case Diagram](/images/UseCaseDiagram.jpg)
+![Use Case Diagram](/images/UseCaseDiagram.png)
 - [Personas](/design_document.md#personas)
 
 ## 2.0 Related Documents

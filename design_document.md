@@ -55,8 +55,7 @@ I am a college student who always forgets my due dates and can’t communicate e
 I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they dont hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ### Use Cases
-TODO: Update with new use cases from requirements
-![Use case diagram image](/Images/UseCaseDiagram.jpg "Hi there :)")
+![Use case diagram image](/Images/UseCaseDiagram.png "Hi there :)")
 
 ## Wireframes
 See `/Design Files/WireFrame` for wire frames
