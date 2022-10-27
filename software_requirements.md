@@ -2,17 +2,28 @@
 ## Revision History
 |Date|Author|Distibuted to|Version|
 |----|:----:|:-----------:|:-----:|
-|10/24/2022|All|Class|1.0|
+|10/24/2022|All|Class & Supervisor|1.0|
+
 ## 1.0 Introduction
 Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
 
+The purpose of this document is to establish a common understanding between the development team and supervisor. Included are all our diagrams and documentation outlining what is needed to consider this a complete project. In turn, this document will be a single source of truth to make sure everyone is up to date on any changes. Along with requirements for project is also who will be responsible for what. This document may change and revision will be noted above and tracked with Git to view previous information. 
+
+### Scope
+![System Context Diagram](/images/system_context.jpg)
+![Use Case Diagram](/images/UseCaseDiagram.jpg)
+- [Personas](/design_document.md#personas)
 
 ## 2.0 Related Documents
-- [Software Development Plan](/design_document.md)
-- [Requirements Traceability Matrix]()
+- [Software Development Plan](/design_document.md#vox)
+
+TODO: Create traceability matrix, based on template provided but in markdown plz
+
+
+TODO: find out other related documents
 
 ## 3.0 Requirments
-### <ins>As a user I want to:</ins>
+#### As a user I want to:
 - Create an account
 - Login 
 - Chat/Call on servers
@@ -22,13 +33,14 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Create a Server
 - Set preferences
 
-### <ins>As a server admin I want to: </ins>
+#### As a server admin I want to:
 - Do everything that a user can do 
 - Configure my servers permissions
 - Remove users from my server
 - Delete my server
 
 ## 3.1 Punch list
+The following items are still unresolved:
 - Light/Dark theme selection 
 
 ## Use Cases
@@ -123,7 +135,6 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Requirements: To update all users invited to event
 - User Interface: Home page screen
 
-
 ### 3.9 Set preferences/settings
 - Actors: User and Server Admin
 - Preconditions: Must have an account
@@ -178,17 +189,49 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Requirements: If user does not exist, invite is not send. 
 - User Interface: Server screen
 
-
 ## 4.0 Non-functional Requirments
 
 ### 4.1 Other systems
 
+
 ### 4.2 Security
+- SSL Certificate
+- Encrypted sensitive information should have **2048** bits of entropy
 
 ### 4.3 Performance 
+- Responses sent between users should be recieved in **< 500 ms**
+- Server will be ran on a per needed basis and will not remain running when not being used
+- For demo purposes the application can be self hosted and ran without external parties needing to set up anything
 
 ### 4.4 Maintainability
+- The program will cease all maintence and development on December 7th, the delivery date
 
 ## 5.0 Architecture
 ![Hardware Architecture](/images/architecture.jpg)
+
+Page break?
+
+## AGREED TO:
+
+### Supervisor
+
+#### Signature
+
+#### Name: Dr Schwesinger
+
+#### Title:
+
+#### Date:
+
+AGREED TO:
+
+#### Team members
+
+#### Signature
+
+#### Name: Hamad Ahmed, Gabe Leffew, Ben Lloyd
+
+#### Title:
+
+#### Date:
 

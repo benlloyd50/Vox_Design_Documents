@@ -49,121 +49,14 @@ Server Admin - Any person that owns a server inside the application. They have m
 ### Context Diagram
 ![Context Diagram Image](/Images/system_context.jpg "Context Diagram image")
 
-### User Story/ Persona
+### Personas 
 I am a college student who always forgets my due dates and can’t communicate effectively with my team members. If only there was one spot to see all this information, I would excel in my academic career. 
+
 I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they dont hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ### Use Cases
+TODO: Update with new use cases from requirements
 ![Use case diagram image](/Images/UseCaseDiagram.jpg "Hi there :)")
-
-### Use Case Description
-#### 1. Name: Create Account
-- Actors: User
-- Preconditions: none
-- Flow of events:
-  1. User enters data
-  2. Data is validated
-  3. Data is stored in a database
-- Postconditions: User gets access to the homepage screen
-- Requirements: if b fails, account is not created with invalid data
-
-#### 2. Name: User Login
-- Actors: User and Server Admin
-- Preconditions: Must have an existing account
-- Flow of events:
-  1. User inputs login information
-  2. Input is validated
-  3. Data is stored in a database
-- Postconditions: 
-- Requirements: If data is invalid, display wrong login and prompt to create an account 
-
-#### 3. Name: Create Server
-- Actors: User and Server Admin
-- Preconditions: Must have an existing account
-- Flow of events:
-  1. Enter information about the server.
-  2. Data is validated
-  3. Data is stored in a database
-- Postconditions: Server is established, User becomes the server admin of the created server.
-- Requirements: If the input is invalid, display an error message about what is invalid and try again.
-
-#### 4. Name: Call/chat on Servers
-- Actors: Users and Server Admin
-- Preconditions: Must have/be in a server with at least one other user.
-- Flow of events:
-  1. Select server
-  2. Start a call/chat with another user
-  3. Communicate
-  4. End the call/chat
-- Postcondition: None
-Requirements: Must have/be in a server
-
-#### 5. Name: View/edit notebook
-- Actors: Users and Server Admin
-- Preconditions: Must have an account
-- Flow of events:
-  1. Open notebook
-  2. View content
-  3. Make changes
-  4. Share notebook with other users
-- Postconditions: Save notebook if changes were made
-- Requirements: Must have an existing notebook
-
-#### 6. Name: View/edit Calendar
-- Actors: Users and Server Admin
-- Preconditions: Must have an account
-- Flow of events:
-  1. Open calendar
-  2. View content
-  3. Delete/add events
-  4. Respond to invites for events
-- Postconditions: If changes were made, the calendar is updated
-- Requirements: Cannot see server events if you are not in a server
-
-#### 7. Name: Set preferences/settings
-- Actors: User and Server Admin
-- Preconditions: Must have an account
-- Flow of events:
-  1. Open settings menu
-  2. Change settings
-  3. Apply changes
-- Postconditions: Changes are saved if any were made
-- Requirements: none
-
-#### 8. Name: Configure server permissions
-- Actors: Server Admin
-- Preconditions: 
-- Server must be created
-  1. Must be admin of server
-  2. Flow of events:
-  3. Open server settings
-  4. Configure settings
-  5. Save settings
-- Postconditions: The server preferences will be updated if anything changed.
-- Requirements: None  
-
-#### 9. Name: Remove Users
-- Actors: Server Admin
-- Preconditions: 
-- Have users in a server
-  1. Must be admin of server
-  2. Flow of events:
-  3. Select user in server
-  4. Confirmation on doing so
-- Postconditions: remove user from record of server
-- Requirements: None
-
-#### 10. Name: Delete Server
-- Actors: Server Admin
-- Preconditions: 
-- Server must be created
-  1. Must be admin of server
-  2. Flow of events:
-  3. Go to settings
-  4. Select to delete
-  5. Confirmation to delete server, mention it is not reversible 
-- Postconditions: deletes the server 
-- Requirements: None
 
 ## Wireframes
 See `/Design Files/WireFrame` for wire frames
@@ -179,8 +72,6 @@ See `/Design Files/WireFrame` for wire frames
 | Database (SQL)  | X | X | X
 | HTML/CSS        | X | X | 
 | Web server      | X | X | X
-
-
 
 ## Validation Plan
 The definition of done can be described as completing all use case conditions to allow users to communicate effectively while using features within the app. 
