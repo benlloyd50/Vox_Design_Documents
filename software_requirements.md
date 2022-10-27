@@ -17,7 +17,17 @@ The purpose of this document is to establish a common understanding between the 
 ## 2.0 Related Documents
 - [Software Development Plan](/design_document.md#vox)
 
-TODO: Create traceability matrix, based on template provided but in markdown plz
+TODO: Fill in traceability matrix
+
+|SRS Section|Responsible Party|Priority|
+|----|:-----------:|:-----:|
+|[Create Account](#32-create-account)|Backend & FrontEnd|Highest|
+
+#### Priority Key
+- Crucial - must be done or many other sections cannot be finished 
+- High - must be done but does not block or prevent other sections from being completed
+- Medium - tasks that could not be removed but should be trivial
+- Low - tasks that could be removed with little to no impact on the project as a whole
 
 
 TODO: find out other related documents
