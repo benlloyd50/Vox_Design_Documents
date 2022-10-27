@@ -214,7 +214,8 @@ TODO: what else might go here
 ## 4.0 Non-functional Requirments
 
 ### 4.1 Other systems
-
+- Database server
+- Web Server System
 
 ### 4.2 Security
 - SSL Certificate
