@@ -21,16 +21,25 @@ TODO: Fill in traceability matrix
 
 |SRS Section|Responsible Party|Priority|
 |----|:-----------:|:-----:|
-|[Create Account](#32-create-account)|Backend & FrontEnd|Highest|
+|[Create Account](#32-create-account)|Backend & FrontEnd|Crucial|
+|[User Login](#33-user-login)|Backend & FrontEnd|Crucial|
+|[Create Server](#34-create-vox-server)|Backend & FrontEnd|Crucial|
+|[Chat on server](#35-chat-on-servers)|Backend & FrontEnd|High|
+|[Call on server](#36-call-on-servers)|Backend & FrontEnd|High|
+|[View/Edit Notebook](#37-viewedit-notebook)|Backend & FrontEnd|High|
+|[Create event](#381-create-event)|Backend & FrontEnd|Medium|
+|[Remove event](#382-remove-event)|Backend & FrontEnd|Medium|
+|[Set perferences](#39-set-preferencessettings)|Backend & FrontEnd|Low|
+|[Configure Server permissions](#310-configure-server-permissions)|Backend & FrontEnd|Medium|
+|[Remove users from a server](#311-remove-users)|Backend & FrontEnd|Medium|
+|[Delete Server](#312-delete-server)|Backend & FrontEnd|Low|
+|[Invite users to a server](#313-invite-users-to-server)|Backend & FrontEnd|Medium|
 
 #### Priority Key
 - Crucial - must be done or many other sections cannot be finished 
 - High - must be done but does not block or prevent other sections from being completed
 - Medium - tasks that could not be removed but should be trivial
 - Low - tasks that could be removed with little to no impact on the project as a whole
-
-
-TODO: find out other related documents
 
 ## 3.0 Requirments
 #### As a user I want to:
@@ -52,6 +61,7 @@ TODO: find out other related documents
 ## 3.1 Punch list
 The following items are still unresolved:
 - Light/Dark theme selection 
+TODO: what else might go here
 
 ## Use Cases
 ### 3.2 Create Account
@@ -76,7 +86,7 @@ The following items are still unresolved:
 - Requirements: If step 2 fails, display wrong login and prompt to create an account 
 - Interface requirements: A login screen
 
-### 3.4 Create Server
+### 3.4 Create Vox Server
 - Actors: User and Server Admin
 - Preconditions: Must have an existing account
 - Flow of events:
@@ -124,6 +134,8 @@ The following items are still unresolved:
 
 ### 3.8 Calendar
 - Actors: Users and Server Admin 
+
+![Calendar Use Cases](/Images/calendar_usecase.jpg)
 
 #### 3.8.1 Create event
 - Preconditions: Must have an account
@@ -214,10 +226,11 @@ The following items are still unresolved:
 - For demo purposes the application can be self hosted and ran without external parties needing to set up anything
 
 ### 4.4 Maintainability
-- The program will cease all maintence and development on December 7th, the delivery date
+- The program will cease all maintence and development on May 5th, the delivery date
 
 ## 5.0 Architecture
 ![Hardware Architecture](/images/architecture.jpg)
+TODO: ask about 2nd client
 
 Page break?
 
@@ -233,13 +246,33 @@ Page break?
 
 #### Date:
 
-AGREED TO:
+## AGREED TO:
 
 #### Team members
 
 #### Signature
 
-#### Name: Hamad Ahmed, Gabe Leffew, Ben Lloyd
+#### Name: Hamad Ahmed
+
+#### Title:
+
+#### Date:
+
+#### Team members
+
+#### Signature
+
+#### Name: Gabe Leffew
+
+#### Title:
+
+#### Date:
+
+#### Team members
+
+#### Signature
+
+#### Name: Ben Lloyd
 
 #### Title:
 
