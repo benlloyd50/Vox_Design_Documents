@@ -1,0 +1,1 @@
+pandoc -f markdown -t docx design_document.md -o rendered\ docs/VoxSoftwarePlan.docx
