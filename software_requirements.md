@@ -1,6 +1,6 @@
 # Software Requirement Specifications
 ## Revision History
-|Date|Author|Distibuted to|Version|
+|Date|Author|Distributed to|Version|
 |----|:----:|:-----------:|:-----:|
 |10/24/2022|All|Class & Supervisor|1.0|
 
