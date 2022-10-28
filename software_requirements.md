@@ -7,7 +7,7 @@
 ## 1.0 Introduction
 Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
 
-The purpose of this document is to establish a common understanding between the development team and supervisor. Included are all our diagrams and documentation outlining what is needed to consider this a complete project. In turn, this document will be a single source of truth to make sure everyone is up to date on any changes. Along with requirements for project is also who will be responsible for what. This document may change and revision will be noted above and tracked with Git to view previous information. 
+The purpose of this document is to establish a common understanding between the development team and supervisor. Included are all our diagrams and documentation outlining what is needed to consider this a complete project. In turn, this document will be a single source of truth to make sure everyone is up to date on any changes. Along with requirements for project is also who will be responsible for what. This document may change, and revision will be noted above and tracked with Git to view previous information. 
 
 ### Scope
 ![System Context Diagram](/images/system_context.jpg)
@@ -17,44 +17,20 @@ The purpose of this document is to establish a common understanding between the 
 ## 2.0 Related Documents
 - [Software Development Plan](/design_document.md#vox)
 
-TODO: Fill in traceability matrix
-
-|SRS Section|Responsible Party|Priority|
-|----|:-----------:|:-----:|
-|[Create Account](#32-create-account)|Backend & FrontEnd|Crucial|
-|[User Login](#33-user-login)|Backend & FrontEnd|Crucial|
-|[Create Server](#34-create-vox-server)|Backend & FrontEnd|Crucial|
-|[Chat on server](#35-chat-on-servers)|Backend & FrontEnd|High|
-|[Call on server](#36-call-on-servers)|Backend & FrontEnd|High|
-|[View/Edit Notebook](#37-viewedit-notebook)|Backend & FrontEnd|High|
-|[Create event](#381-create-event)|Backend & FrontEnd|Medium|
-|[Remove event](#382-remove-event)|Backend & FrontEnd|Medium|
-|[Set perferences](#39-set-preferencessettings)|Backend & FrontEnd|Low|
-|[Configure Server permissions](#310-configure-server-permissions)|Backend & FrontEnd|Medium|
-|[Remove users from a server](#311-remove-users)|Backend & FrontEnd|Medium|
-|[Delete Server](#312-delete-server)|Backend & FrontEnd|Low|
-|[Invite users to a server](#313-invite-users-to-server)|Backend & FrontEnd|Medium|
-
-#### Priority Key
-- Crucial - must be done or many other sections cannot be finished 
-- High - must be done but does not block or prevent other sections from being completed
-- Medium - tasks that could not be removed but should be trivial
-- Low - tasks that could be removed with little to no impact on the project as a whole
-
-## 3.0 Requirments
+## 3.0 Requirements
 #### As a user I want to:
 - Create an account
 - Login 
 - Chat/Call on servers
 - View/Edit Notebook
-- Create Calender Events
+- Create Calendar Events
 - Invite Users
 - Create a Server
 - Set preferences
 
 #### As a server admin I want to:
 - Do everything that a user can do 
-- Configure my servers permissions
+- Configure my server's permissions
 - Remove users from my server
 - Delete my server
 
@@ -73,7 +49,7 @@ TODO: what else might go here
   3. Data is stored in a database
 - Postconditions: User gets access to the homepage screen
 - Requirements: If step 2 fails, account is not created with invalid data, create account form is cleared.
-- Interface Requirments: A create account screen
+- Interface Requirements: A create account screen
 
 ### 3.3 User Login
 - Actors: User and Server Admin
@@ -84,7 +60,7 @@ TODO: what else might go here
   3. Data is stored in a database
 - Postconditions: 
 - Requirements: If step 2 fails, display wrong login and prompt to create an account 
-- Interface requirements: A login screen
+- Interface Requirements: A login screen
 
 ### 3.4 Create Vox Server
 - Actors: User and Server Admin
@@ -95,7 +71,7 @@ TODO: what else might go here
   3. Data is stored in a database
 - Postconditions: Server is established, User becomes the server admin of the created server.
 - Requirements: If the input is invalid, display an error message about what is invalid and try again.
-- User Interface: A server creator screen
+- Interface Requirements: A server creator screen
 
 ### 3.5 Chat on Servers
 - Actors: Users and Server Admin
@@ -103,10 +79,10 @@ TODO: what else might go here
 - Flow of events:
   1. Select server
   2. Enter messages in chat box
-  3. Recieve messages
+  3. Receive messages
 - Postcondition: None
 - Requirements: None
-- User Interface: A server chatroom
+- Interface Requirements: A server chatroom
 
 ### 3.6 Call on Servers
 - Actors: Users and Server Admin
@@ -119,18 +95,18 @@ TODO: what else might go here
   5. End call
 - Postcondition: Call info is displayed in chat
 - Requirements: If connection is lost during call, user cannot rejoin the call. 
-- User Interface: A server call room
+- Interface Requirements: A server call room
 
 ### 3.7 View/edit notebook
 - Actors: Users and Server Admin
-- Preconditions: Must have an account and be apart of a server
+- Preconditions: Must have an account and be a part of a server
 - Flow of events:
   1. Open notebook to view content
   2. Make changes
   3. Share notebook with other users
 - Postconditions: Save notebook if changes were made
 - Requirements: None
-- User Interface: Server screen, and notebook screen
+- Interface Requirements: Server screen, and notebook screen
 
 ### 3.8 Calendar
 - Actors: Users and Server Admin 
@@ -142,10 +118,10 @@ TODO: what else might go here
 - Flow of events:
   1. Open calendar and view content
   2. User enters data for event 
-- Postconditions: Event is added to calender
+- Postconditions: Event is added to calendar
 - Requirements: None
 - Other requirements: in order to invite users to an event, you must be in a server with them 
-- User Interface: Home page screen
+- Interface Requirements: Home page screen
 
 #### 3.8.2 Remove event 
 - Preconditions: Must have an existing event
@@ -153,9 +129,9 @@ TODO: what else might go here
   1. Select event
   2. Click to delete
   3. Confirm deletion 
-- Postcondition: Event is deleted from calender
+- Postcondition: Event is deleted from calendar
 - Requirements: To update all users invited to event
-- User Interface: Home page screen
+- Interface Requirements: Home page screen
 
 ### 3.9 Set preferences/settings
 - Actors: User and Server Admin
@@ -166,7 +142,7 @@ TODO: what else might go here
   3. Apply changes
 - Postconditions: Changes are saved if any were made
 - Requirements: Edit profile, application settings
-- User Interface: Settings screen
+- Interface Requirements: Settings screen
 
 ### 3.10 Configure server permissions
 - Actors: Server Admin
@@ -177,7 +153,7 @@ TODO: what else might go here
   3. Save settings
 - Postconditions: The server preferences will be updated if anything changed.
 - Requirements: None  
-- User Interface: Server configuration screen
+- Interface Requirements: Server configuration screen
 
 ### 3.11 Remove Users
 - Actors: Server Admin
@@ -188,7 +164,7 @@ TODO: what else might go here
   3. Confirmation on doing so
 - Postconditions: remove user from record of server
 - Requirements: None
-- User Interface: Server screen, message to confirm
+- Interface Requirements: Server screen, message to confirm
 
 ### 3.12 Delete Server
 - Actors: Server Admin
@@ -199,7 +175,7 @@ TODO: what else might go here
   3. Confirmation to delete server, mention it is not reversible 
 - Postconditions: deletes the server 
 - Requirements: None
-- User Interface: Server screen, setting screen, message to confirm
+- Interface Requirements: Server screen, setting screen, message to confirm
 
 ### 3.13 Invite users to server
 - Actors: User and Server Admin
@@ -208,10 +184,10 @@ TODO: what else might go here
   1. Select the invite user option 
   2. Enter username of user to invite
 - Postconditions: Sends invite notification to user asking them to join the server. 
-- Requirements: If user does not exist, invite is not send. 
-- User Interface: Server screen
+- Requirements: If user does not exist, invite is not sent. 
+- Interface Requirements: Server screen
 
-## 4.0 Non-functional Requirments
+## 4.0 Non-functional Requirements
 
 ### 4.1 Other systems
 - Database server
@@ -222,16 +198,16 @@ TODO: what else might go here
 - Encrypted sensitive information should have **2048** bits of entropy
 
 ### 4.3 Performance 
-- Responses sent between users should be recieved in **< 500 ms**
-- Server will be ran on a per needed basis and will not remain running when not being used
+- Responses sent between users should be received in **< 500 ms**
+- Server will have an expected uptime of **99.9%**
 - For demo purposes the application can be self hosted and ran without external parties needing to set up anything
 
 ### 4.4 Maintainability
-- The program will cease all maintence and development on May 5th, the delivery date
+- The program will have an open source license on Github. This will allow for a central location for issues regarding the application to be stored. On a per issue basis, we will try to fix any security critical or performance critical bugs. Quality of life and small improvements will be left up to the community to add unless an overwhelming demand is presented.
 
 ## 5.0 Architecture
 ![Hardware Architecture](/images/architecture.jpg)
-TODO: ask about 2nd client
+TODO: remove 2nd client
 
 Page break?
 
