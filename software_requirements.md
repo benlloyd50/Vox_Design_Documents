@@ -1,8 +1,8 @@
 # Software Requirement Specifications
 ## Revision History
-|Date|Author|Distributed to|Version|
+|Date Created|Author|Distributed to|Version|
 |----|:----:|:-----------:|:-----:|
-|10/24/2022|All|Class & Supervisor|1.0|
+|10/24/2022|Team|Team & Supervisor|1.0|
 
 ## 1.0 Introduction
 Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
@@ -10,12 +10,13 @@ Our goal is to create a centralized location for collaboration in the classroom 
 The purpose of this document is to establish a common understanding between the development team and supervisor. Included are all our diagrams and documentation outlining what is needed to consider this a complete project. In turn, this document will be a single source of truth to make sure everyone is up to date on any changes. Along with requirements for project is also who will be responsible for what. This document may change, and revision will be noted above and tracked with Git to view previous information. 
 
 ### Scope
-![System Context Diagram](/images/system_context.jpg)
-![Use Case Diagram](/images/UseCaseDiagram.png)
-- [Personas](/design_document.md#personas)
+![System Context Diagram](./Images/system_context.jpg)
+![Use Case Diagram](./Images/UseCaseDiagram.png)
+- [Personas](./design_document.md#personas)
 
 ## 2.0 Related Documents
-- [Software Development Plan](/design_document.md#vox)
+- [Software Development Plan](./design_document.md#vox)
+- [Pert Chart](./Images/pertchart.png)
 
 ## 3.0 Requirements
 #### As a user I want to:
@@ -37,7 +38,6 @@ The purpose of this document is to establish a common understanding between the 
 ## 3.1 Punch list
 The following items are still unresolved:
 - Light/Dark theme selection 
-TODO: what else might go here
 
 ## Use Cases
 ### 3.2 Create Account
@@ -80,7 +80,7 @@ TODO: what else might go here
   1. Select server
   2. Enter messages in chat box
   3. Receive messages
-- Postcondition: None
+- Postconditions: None
 - Requirements: None
 - Interface Requirements: A server chatroom
 
@@ -93,7 +93,7 @@ TODO: what else might go here
   3. Start the call
   4. Communicate
   5. End call
-- Postcondition: Call info is displayed in chat
+- Postconditions: Call info is displayed in chat
 - Requirements: If connection is lost during call, user cannot rejoin the call. 
 - Interface Requirements: A server call room
 
@@ -111,7 +111,7 @@ TODO: what else might go here
 ### 3.8 Calendar
 - Actors: Users and Server Admin 
 
-![Calendar Use Cases](/Images/calendar_usecase.jpg)
+![Calendar Use Cases](./Images/calendar_usecase.jpg)
 
 #### 3.8.1 Create event
 - Preconditions: Must have an account
@@ -129,7 +129,7 @@ TODO: what else might go here
   1. Select event
   2. Click to delete
   3. Confirm deletion 
-- Postcondition: Event is deleted from calendar
+- Postconditions: Event is deleted from calendar
 - Requirements: To update all users invited to event
 - Interface Requirements: Home page screen
 
@@ -195,21 +195,18 @@ TODO: what else might go here
 
 ### 4.2 Security
 - SSL Certificate
-- Encrypted sensitive information should have **2048** bits of entropy
+- Encrypted sensitive information should have **2048** bits of entropy and will be salted before being stored in our database
 
 ### 4.3 Performance 
 - Responses sent between users should be received in **< 500 ms**
-- Server will have an expected uptime of **99.9%**
-- For demo purposes the application can be self hosted and ran without external parties needing to set up anything
+- Server will have an uptime of **99.9%**
+- For self testing purposes the application can be self hosted and ran without external parties needing to set up anything
 
 ### 4.4 Maintainability
 - The program will have an open source license on Github. This will allow for a central location for issues regarding the application to be stored. On a per issue basis, we will try to fix any security critical or performance critical bugs. Quality of life and small improvements will be left up to the community to add unless an overwhelming demand is presented.
 
 ## 5.0 Architecture
-![Hardware Architecture](/images/architecture.jpg)
-TODO: remove 2nd client
-
-Page break?
+![Hardware Architecture](./Images/architecture.jpg)
 
 ## AGREED TO:
 

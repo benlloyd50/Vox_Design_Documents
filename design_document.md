@@ -38,24 +38,24 @@ The process model we are using for this project will be Agile. The first reason 
 
 Another reason for using agile is that it is a flexible model that will enable us to make rapid changes throughout our development process. It allows us to react quickly as we implement the project and we learn more about what we are making. Through its duration there will be design challenges that we will need to adapt to and Agile will help mitigate those.
 
-Agile is the de facto standard in the software industry so we chose this methodology so we can get more comfortable with the process. Learning about the agile methodogoly in a forgiving environment such as the classroom will help us become accustomed to the process and avoid common mistakes. We hope that by using Agile we can more closely create the professional quality for delivering software. 
+Agile is the de facto standard in the software industry so we chose this methodology so we can get more comfortable with the process. Learning about the agile methodology in a forgiving environment such as the classroom will help us become accustomed to the process and avoid common mistakes. We hope that by using Agile we can more closely create the professional quality for delivering software. 
 
 ## Product Definition
 ### Actors
 User - Any person using the application that does not own a server inside the application. This is not the same as a user inside a server as that is a per sever basis.
 
-Server Admin - Any person that owns a server inside the application. They have more priveleges for a specific server but not the application as a whole.
+Server Admin - Any person that owns a server inside the application. They have more privileges for a specific server but not the application as a whole.
 
 ### Context Diagram
-![Context Diagram Image](/Images/system_context.jpg "Context Diagram image")
+![Context Diagram Image](./Images/system_context.jpg "Context Diagram image")
 
 ### Personas 
 I am a college student who always forgets my due dates and can’t communicate effectively with my team members. If only there was one spot to see all this information, I would excel in my academic career. 
 
-I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they dont hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
+I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to  practice sometimes and other times they don't hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ### Use Cases
-![Use case diagram image](/Images/UseCaseDiagram.png "Hi there :)")
+![Use case diagram image](./Images/UseCaseDiagram.png "Hi there :)")
 
 ## Wireframes
 See `/Design Files/WireFrame` for wire frames
