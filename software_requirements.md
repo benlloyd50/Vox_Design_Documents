@@ -2,7 +2,8 @@
 ## Revision History
 |Date Created|Author|Distributed to|Version|
 |----|:----:|:-----------:|:-----:|
-|10/24/2022|Team|Team & Supervisor|1.0|
+|1/27/2023|Team|Team & Supervisor|2|
+|10/24/2022|Team|Team & Supervisor|1|
 
 ## 1.0 Introduction
 Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
@@ -235,8 +236,6 @@ The following items are still unresolved:
 
 #### Date:
 
-#### Team members
-
 #### Signature
 
 #### Name: Gabe Leffew
@@ -244,8 +243,6 @@ The following items are still unresolved:
 #### Title:
 
 #### Date:
-
-#### Team members
 
 #### Signature
 
@@ -255,3 +252,10 @@ The following items are still unresolved:
 
 #### Date:
 
+#### Signature
+
+#### Name: Jesse Fullington
+
+#### Title:
+
+#### Date:

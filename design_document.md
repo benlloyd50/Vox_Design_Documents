@@ -7,6 +7,7 @@ Names: Gabe Leffew, Hamad Ahmed, Ben Lloyd
 
 | Date Created  | Version # |
 | ------------- |:---------:|
+| 1/27/2023     | 3         |
 | 10/7/2022     | 2         |
 | 9/23/2022     | 1         |
 
@@ -15,15 +16,15 @@ Our goal is to create a centralized location for collaboration in the classroom 
 
 ## Team Description
 
-| Skills          | Hamad | Gabe | Ben |
-| --------------- |:-----:|:----:|:---:|
-| Git             | X | X | X
-| Frontend        | X | X |   
-| Backend         |   |   | X  
-| UI              |   |   | X
-| Database (SQL)  | X | X | X
-| HTML/CSS        | X | X | 
-| Web server      | X | X | X
+| Skills          | Hamad | Gabe | Ben | Jesse| 
+| --------------- |:-----:|:----:|:---:|:----:|
+| Git             | X | X | X | X
+| Frontend        | X | X |   | 
+| Backend         |   |   | X | X
+| UI              |   |   | X | 
+| Database (SQL)  | X | X | X | X
+| HTML/CSS        | X | X |   | X
+| Web server      | X | X | X | 
 
 ### Skills required:
 - General systems design
@@ -58,15 +59,15 @@ See `/Design Files/WireFrame` for wire frames
 
 ## Project Organization
 ### Responsibility Matrix
-| Skills          | Hamad | Gabe | Ben |
-| --------------- |:-----:|:----:|:---:|
-| Git             | X | X | X
-| Frontend        | X | X |   
-| Backend         |   |   | X  
-| UI              |   |   | X
-| Database (SQL)  | X | X | X
-| HTML/CSS        | X | X | 
-| Web server      | X | X | X
+| Skills          | Hamad | Gabe | Ben | Jesse| 
+| --------------- |:-----:|:----:|:---:|:----:|
+| Git             | X | X | X | X
+| Frontend        | X | X |   | 
+| Backend         |   |   | X | X
+| UI              |   |   | X | 
+| Database (SQL)  | X | X | X | X
+| HTML/CSS        | X | X |   | X
+| Web server      | X | X | X | 
 
 ## Validation Plan
 The definition of done can be described as completing all use case conditions to allow users to communicate effectively while using features within the app. 
