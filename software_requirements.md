@@ -25,15 +25,15 @@ The purpose of this document is to establish a common understanding between the 
 ![Pert Chart](./Images/pertchart.png)
 
 ### Responsibility Matrix
-| Skills          | Hamad | Gabe | Ben |
-| --------------- |:-----:|:----:|:---:|
-| Git             | X | X | X
-| Frontend        | X | X |   
-| Backend         |   |   | X  
-| UI              |   |   | X
-| Database (SQL)  | X | X | X
-| HTML/CSS        | X | X | 
-| Web server      | X | X | X
+| Skills          | Hamad | Gabe | Ben | Jesse| 
+| --------------- |:-----:|:----:|:---:|:----:|
+| Git             | X | X | X | X
+| Frontend        | X | X |   | 
+| Backend         |   |   | X | X
+| UI              |   |   | X | 
+| Database (SQL)  | X | X | X | X
+| HTML/CSS        | X | X |   | X
+| Web server      | X | X | X | 
 
 ## 3.0 Requirements
 #### As a user I want to:
