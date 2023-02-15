@@ -101,20 +101,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: A server chatroom
 
-### 3.6 Call on Servers
-- Actors: Users and Server Admin
-- Preconditions: Must have/be in a server
-- Flow of events:
-  1. Select server
-  2. Select User(s) to call
-  3. Start the call
-  4. Communicate
-  5. End call
-- Postconditions: Call info is displayed in chat
-- Requirements: If connection is lost during call, user cannot rejoin the call. 
-- Interface Requirements: A server call room
-
-### 3.7 View/edit notebook
+### 3.6 View/edit notebook
 - Actors: Users and Server Admin
 - Preconditions: Must have an account and be a part of a server
 - Flow of events:
@@ -125,12 +112,12 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, and notebook screen
 
-### 3.8 Calendar
+### 3.7 Calendar
 - Actors: Users and Server Admin 
 
 ![Calendar Use Cases](./Images/calendar_usecase.jpg)
 
-#### 3.8.1 Create event
+#### 3.7.1 Create event
 - Preconditions: Must have an account
 - Flow of events:
   1. Open calendar and view content
@@ -140,7 +127,7 @@ The following items are still unresolved:
 - Other requirements: in order to invite users to an event, you must be in a server with them 
 - Interface Requirements: Home page screen
 
-#### 3.8.2 Remove event 
+#### 3.7.2 Remove event 
 - Preconditions: Must have an existing event
 - Flow of events:
   1. Select event
@@ -150,7 +137,7 @@ The following items are still unresolved:
 - Requirements: To update all users invited to event
 - Interface Requirements: Home page screen
 
-### 3.9 Set preferences/settings
+### 3.8 Set preferences/settings
 - Actors: User and Server Admin
 - Preconditions: Must have an account
 - Flow of events:
@@ -161,7 +148,7 @@ The following items are still unresolved:
 - Requirements: Edit profile, application settings
 - Interface Requirements: Settings screen
 
-### 3.10 Configure server permissions
+### 3.9 Configure server permissions
 - Actors: Server Admin
 - Preconditions: None
 - Flow of events:
@@ -172,7 +159,7 @@ The following items are still unresolved:
 - Requirements: None  
 - Interface Requirements: Server configuration screen
 
-### 3.11 Remove Users
+### 3.10 Remove Users
 - Actors: Server Admin
 - Preconditions: Have users in a server
 - Flow of events:
@@ -183,7 +170,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, message to confirm
 
-### 3.12 Delete Server
+### 3.11 Delete Server
 - Actors: Server Admin
 - Preconditions: None
 - Flow of events:
@@ -194,7 +181,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, setting screen, message to confirm
 
-### 3.13 Invite users to server
+### 3.12 Invite users to server
 - Actors: User and Server Admin
 - Preconditions: Must have received a code 
 - Flow of events:
