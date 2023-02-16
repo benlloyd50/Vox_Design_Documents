@@ -34,14 +34,13 @@ Benjamin Lloyd
 - [Software Requirements Specification](./software_requirements.md)
 
 ## 3.0 Design
+- 
 ### 3.1 Component Diagram
 
 ### 3.2 Entity Relationship Diagram
 - [Entity Relationship Diagram](./Design%20Files/er_diagram.drawio)
 
-#### 3.2.1 Database Setup
-
-#### 3.2.2 How to utilize the methods
+#### 3.2.2 What methods are used to setup the database?
 - To access the database, external software are available for this purpose. The software is utilizing is called DB Browser (SQLite). This provide us with a user interface that allows us to look at the tables. Moreover, sql queries can also be inputted to manipulate data. To run our application, the command "flask init-db" has to be executed in order to initialize the database. This is how it works with flask, a python's web framework.
 ### 3.3 Major Use Cases
 #### 3.3.1 Create Account
