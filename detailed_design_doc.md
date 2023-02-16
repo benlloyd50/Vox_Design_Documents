@@ -30,7 +30,8 @@ Benjamin Lloyd
 
 
 ## 2.0 Related Documents
-
+- [Requirements Traceability Matrix](./Requirements_Traceability_Matrix.xlsx)
+- [Software Requirements Specification](./software_requirements.md)
 
 ## 3.0 Design
 ### 3.1 Component Diagram
