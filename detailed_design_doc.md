@@ -37,6 +37,8 @@ Benjamin Lloyd
 ### 3.1 Component Diagram
 
 ### 3.2 Entity Relationship Diagram
+- [Entity Relationship Diagram](./Design%20Files/er_diagram.drawio)
+
 #### 3.2.1 Database Setup
 
 #### 3.2.2 How to utilize the methods
