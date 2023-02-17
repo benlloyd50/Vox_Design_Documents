@@ -5,7 +5,7 @@ February 24, 2023
 
 Version 1
 
-**INSERT LOGO HERE**
+![System Context Diagram](./Images/VOXLOGO.png)
 
 **Presented to**  
 Dr Schwesinger
@@ -24,10 +24,17 @@ Benjamin Lloyd
 
 
 ## 1.0 Introduction
-
+Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
 
 ## 1.2 Scope
 
+![Use Case Diagram](./Images/usecase_diagram.png)
+
+### Personas
+
+- I am a college student who always forgets my due dates and can’t communicate effectively with my team members. If only there was one spot to see all this information, I would excel in my academic career.
+
+- I am a football coach and can’t keep up with my rowdy team. Some of my dogs forget to come to practice sometimes and other times they don't hand in their chicken barbecue fundraisers. I need a place to collaborate with my team and help my boys succeed.
 
 ## 2.0 Related Documents
 - [Requirements Traceability Matrix](./Requirements_Traceability_Matrix.xlsx)
