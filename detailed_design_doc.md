@@ -124,23 +124,26 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Assumptions:
 
 #### 3.3.9 Delete Server
-- Story:
-- Description:
-- Preconditions: None
+- Story: No one uses my server anymore and there is no point of having it so I want to get rid of it.
+- Description: The admin of the server will select the settings option in the top right hand corner of their server page; once there they will be able to select `Delete Server` and will be prompted with a window to confirm this deletion. 
+- Preconditions: Be an admin of the server
 - Postconditions: deletes the server 
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: 
+- Constraints: 
+- Assumptions: 
+
+    ![Delete a Server SD](./Sequence%20Diagrams/Delete_a_serverSD.png)
 
 #### 3.3.10 Invite users to server
-- Story:
-- Description:
+- Story: I want to invite my friends to the server to chat with them.
+- Description: The admin of the server will select the settings option in the top right hand corner of their server page; Once there they will be able to select `Invite Users` and will be prompted with an input to enter a users name. 
 - Preconditions: Must have received a code 
 - Postconditions: Sends invite notification to user asking them to join the server. 
 - Design Details:
 - Constraints:
 - Assumptions:
 
+    ![Invite a User](./Sequence%20Diagrams/inviteuserSD.png)
 ### 3.4 Minor Use Cases
 #### 3.4.1 Configure server permissions
 - Story:
