@@ -59,6 +59,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Constraints: Can only enter alphanumeric characters for username.
 - Assumptions: none
 
+![Sequence Diagram for create account](./Design%20Files/Sequence%20Diagrams/Create_Account_SD.jpg))
+
 #### 3.3.2 User Login
 - Story: To keep using the application more than time, you can login into your account and be back where you left off.
 - Description: User visits the website after they already have an account. User would hit the login button, and enter their account information to log in. Then, they would taken to the homepage.
@@ -67,6 +69,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Enter your valid account information
 - Constraints: none
 - Assumptions: none
+
+![Sequence Diagram for User Login](./Design%20Files/Sequence%20Diagrams/User_Login_SD.jpg)
 
 #### 3.3.3 Create Vox Server
 - Story: To interact with another user, both users need to be in the same server. One user needs to create a server or be invited to one. If the user wants to be a server admin, a server must be created. Moreover, the first user of the application must create a server.
@@ -77,6 +81,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Constraints: Can only enter alphanumeric characters for server name.
 - Assumptions: A unique server admin is created and stored in the database.
 
+![Sequence Diagram for Create VOX Server](./Design%20Files/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
+
 #### 3.3.4 Chat on Servers
 - Story:
 - Description:
@@ -85,6 +91,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details:
 - Constraints:
 - Assumptions:
+
+
 
 #### 3.3.5 View/edit notebook
 - Story:
