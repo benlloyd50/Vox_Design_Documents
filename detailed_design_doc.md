@@ -44,7 +44,7 @@ Benjamin Lloyd
 - To access the database, external software are available for this purpose. The software is utilizing is called DB Browser (SQLite). This provide us with a user interface that allows us to look at the tables. Moreover, sql queries can also be inputted to manipulate data. To run our application, the command "flask init-db" has to be executed in order to initialize the database. This is how it works with flask, a python's web framework.
 ### 3.3 Major Use Cases
 #### 3.3.1 Create Account
-- Story:
+- Story: I want to identify myself within the application. Creating an account is a way to fullfil this.
 - Description: 
 - Preconditions: none
 - Postconditions: User gets access to the homepage screen
@@ -53,7 +53,7 @@ Benjamin Lloyd
 - Assumptions:
 
 #### 3.3.2 User Login
-- Story:
+- Story: To keep using the application more than time, you can login into your account and be back where you left off.
 - Description:
 - Preconditions: Must have an existing account
 - Postconditions: none
