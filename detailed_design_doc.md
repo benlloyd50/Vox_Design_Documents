@@ -143,8 +143,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Description: The admin of the server will select the settings option in the top right hand corner of their server page; once there they will be able to select `Delete Server` and will be prompted with a window to confirm this deletion. 
 - Preconditions: Be an admin of the server
 - Postconditions: deletes the server 
-- Design Details: 
-- Constraints: 
+- Design Details: This will delete the server and everything associated with it in the database.
+- Constraints: Only the server creater can delete the server.
 - Assumptions: None  
 ![Delete a Server SD](./Sequence%20Diagrams/Delete_a_serverSD.png)
 
@@ -153,7 +153,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Description: The admin of the server will select the settings option in the top right hand corner of their server page; Once there they will be able to select `Invite Users` and will be prompted with an input to enter a users name. 
 - Preconditions: Must have received a code 
 - Postconditions: Sends invite notification to user asking them to join the server. 
-- Design Details:
+- Design Details: Users will have a notification button which is a socket constantly looking for new incoming notifications. 
 - Constraints:
 - Assumptions: None  
 ![Invite a User](./Sequence%20Diagrams/inviteuserSD.png)
