@@ -206,6 +206,7 @@ The following items are still unresolved:
 - Responses sent between users should be received in **< 500 ms**
 - Server will have an uptime of **99.9%**
 - For self testing purposes the application can be self hosted and ran without external parties needing to set up anything
+- We would like to support up to 10 concurrent users. We believe this is enough to demonstrate the features listed and provide a better proof of concept before scaling the application would be required.
 
 ### 4.4 Maintainability
 - The program will have an open source license on Github. This will allow for a central location for issues regarding the application to be stored. On a per issue basis, we will try to fix any security critical or performance critical bugs. Quality of life and small improvements will be left up to the community to add unless an overwhelming demand is presented.

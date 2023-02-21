@@ -165,12 +165,10 @@ Our goal is to create a centralized location for collaboration in the classroom 
 
 ## 4.0 Systems
 ### 4.1 Architecture
+The architecture is defined in the SRS document.
 - [Software Requirements Specification](./software_requirements.md/#50-architecture)
 
 
 ## 5.0 Non Functional Requirements
-### 5.1 SSL Certificate
-*Certificate is currently pending*
-
-### 5.2 Performance Criteria
-We would like to support up to 10 concurrent users. We believe this is enough to demonstrate the features listed and provide a better proof of concept before scaling the application would be required.
+The nonfunctional requirements are defined in the SRS document.
+- [Software Requirements Specification](./software_requirements.md/#40-non-functional-requirements)
