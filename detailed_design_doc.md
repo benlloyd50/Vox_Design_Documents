@@ -40,6 +40,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - [Requirements Traceability Matrix](./Requirements_Traceability_Matrix.xlsx)
 - [Software Requirements Specification](./software_requirements.md)
 
+
 ## 3.0 Design
 ### 3.1 Component Diagram
 ![Component Diagram](./Images/component_diagram.png)
@@ -56,6 +57,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Do not forget to enter valid account information.
 - Constraints: Can only enter alphanumeric characters for username.
 - Assumptions: none
+![Sequence Diagram for create account](./Design%20Files/Sequence%20Diagrams/Create_Account_SD.jpg))
 
 #### 3.3.2 User Login
 - Story: To keep using the application more than time, you can login into your account and be back where you left off.
@@ -65,6 +67,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Enter your valid account information
 - Constraints: none
 - Assumptions: none
+![Sequence Diagram for User Login](./Design%20Files/Sequence%20Diagrams/User_Login_SD.jpg)
 
 #### 3.3.3 Create Vox Server
 - Story: To interact with another user, both users need to be in the same server. One user needs to create a server or be invited to one. If the user wants to be a server admin, a server must be created. Moreover, the first user of the application must create a server.
@@ -74,6 +77,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Do not forget to enter a valid server name.
 - Constraints: Can only enter alphanumeric characters for server name.
 - Assumptions: A unique server admin is created and stored in the database.
+![Sequence Diagram for Create VOX Server](./Design%20Files/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
 
 #### 3.3.4 Chat on Servers
 - Story:
@@ -135,22 +139,24 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ![Share Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Remove%20User.png)
 
 #### 3.3.9 Delete Server
-- Story:
-- Description:
-- Preconditions: None
+- Story: No one uses my server anymore and there is no point of having it so I want to get rid of it.
+- Description: The admin of the server will select the settings option in the top right hand corner of their server page; once there they will be able to select `Delete Server` and will be prompted with a window to confirm this deletion. 
+- Preconditions: Be an admin of the server
 - Postconditions: deletes the server 
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: 
+- Constraints: 
+- Assumptions: None  
+![Delete a Server SD](./Sequence%20Diagrams/Delete_a_serverSD.png)
 
 #### 3.3.10 Invite users to server
-- Story:
-- Description:
+- Story: I want to invite my friends to the server to chat with them.
+- Description: The admin of the server will select the settings option in the top right hand corner of their server page; Once there they will be able to select `Invite Users` and will be prompted with an input to enter a users name. 
 - Preconditions: Must have received a code 
 - Postconditions: Sends invite notification to user asking them to join the server. 
 - Design Details:
 - Constraints:
-- Assumptions:
+- Assumptions: None  
+![Invite a User](./Sequence%20Diagrams/inviteuserSD.png)
 
 ### 3.4 Minor Use Cases
 #### 3.4.1 Configure server permissions
