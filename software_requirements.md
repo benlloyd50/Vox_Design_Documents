@@ -15,7 +15,7 @@ The purpose of this document is to establish a common understanding between the 
 ![System Context Diagram](./Images/system_context.jpg)
 
 #### Use Case Diagram
-![Use Case Diagram](./Images/UseCaseDiagram.png)
+![Use Case Diagram](./Images/usecase_diagram.png)
 
 - [Personas](./design_document.md#personas)
 
@@ -57,7 +57,7 @@ The following items are still unresolved:
 - Light/Dark theme selection 
 
 ## Use Cases
-### 3.2 Create Account
+### 3.1 Create Account
 - Actors: User
 - Preconditions: none
 - Flow of events:
@@ -68,7 +68,7 @@ The following items are still unresolved:
 - Requirements: If step 2 fails, account is not created with invalid data, create account form is cleared.
 - Interface Requirements: A create account screen
 
-### 3.3 User Login
+### 3.2 User Login
 - Actors: User and Server Admin
 - Preconditions: Must have an existing account
 - Flow of events:
@@ -79,7 +79,7 @@ The following items are still unresolved:
 - Requirements: If step 2 fails, display wrong login and prompt to create an account 
 - Interface Requirements: A login screen
 
-### 3.4 Create Vox Server
+### 3.3 Create Vox Server
 - Actors: User and Server Admin
 - Preconditions: Must have an existing account
 - Flow of events:
@@ -90,7 +90,7 @@ The following items are still unresolved:
 - Requirements: If the input is invalid, display an error message about what is invalid and try again.
 - Interface Requirements: A server creator screen
 
-### 3.5 Chat on Servers
+### 3.4 Chat on Servers
 - Actors: Users and Server Admin
 - Preconditions: Must have/be in a server
 - Flow of events:
@@ -101,7 +101,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: A server chatroom
 
-### 3.6 View/edit notebook
+### 3.5 View/edit notebook
 - Actors: Users and Server Admin
 - Preconditions: Must have an account and be a part of a server
 - Flow of events:
@@ -112,12 +112,12 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, and notebook screen
 
-### 3.7 Calendar
+### 3.6 Calendar
 - Actors: Users and Server Admin 
 
 ![Calendar Use Cases](./Images/calendar_usecase.jpg)
 
-#### 3.7.1 Create event
+#### 3.6.1 Create event
 - Preconditions: Must have an account
 - Flow of events:
   1. Open calendar and view content
@@ -127,7 +127,7 @@ The following items are still unresolved:
 - Other requirements: in order to invite users to an event, you must be in a server with them 
 - Interface Requirements: Home page screen
 
-#### 3.7.2 Remove event 
+#### 3.6.2 Remove event 
 - Preconditions: Must have an existing event
 - Flow of events:
   1. Select event
@@ -137,7 +137,7 @@ The following items are still unresolved:
 - Requirements: To update all users invited to event
 - Interface Requirements: Home page screen
 
-### 3.8 Set preferences/settings
+### 3.7 Set preferences/settings
 - Actors: User and Server Admin
 - Preconditions: Must have an account
 - Flow of events:
@@ -148,7 +148,7 @@ The following items are still unresolved:
 - Requirements: Edit profile, application settings
 - Interface Requirements: Settings screen
 
-### 3.9 Configure server permissions
+### 3.8 Configure server permissions
 - Actors: Server Admin
 - Preconditions: None
 - Flow of events:
@@ -159,7 +159,7 @@ The following items are still unresolved:
 - Requirements: None  
 - Interface Requirements: Server configuration screen
 
-### 3.10 Remove Users
+### 3.9 Remove Users
 - Actors: Server Admin
 - Preconditions: Have users in a server
 - Flow of events:
@@ -170,7 +170,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, message to confirm
 
-### 3.11 Delete Server
+### 3.10 Delete Server
 - Actors: Server Admin
 - Preconditions: None
 - Flow of events:
@@ -181,7 +181,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, setting screen, message to confirm
 
-### 3.12 Invite users to server
+### 3.11 Invite users to server
 - Actors: User and Server Admin
 - Preconditions: Must have received a code 
 - Flow of events:

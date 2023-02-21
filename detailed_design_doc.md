@@ -3,9 +3,9 @@
 
 February 24, 2023
 
-Version 1
+**Version** 1
 
-![System Context Diagram](./Images/VOXLOGO.png)
+![System Context Diagram](./Images/small_VOXLOGO.png)
 
 **Presented to**  
 Dr Schwesinger
@@ -41,14 +41,12 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - [Software Requirements Specification](./software_requirements.md)
 
 ## 3.0 Design
-- 
 ### 3.1 Component Diagram
+![Component Diagram](./Images/component_diagram.png)
 
 ### 3.2 Entity Relationship Diagram
-- [Entity Relationship Diagram](./Design%20Files/er_diagram.drawio)
+![Entity Relationship Diagram](./Images/er_diagram.png)
 
-#### 3.2.2 What methods are used to setup the database?
-- To access the database, external software are available for this purpose. The software is utilizing is called DB Browser (SQLite). This provide us with a user interface that allows us to look at the tables. Moreover, sql queries can also be inputted to manipulate data. To run our application, the command "flask init-db" has to be executed in order to initialize the database. This is how it works with flask, a python's web framework.
 ### 3.3 Major Use Cases
 #### 3.3.1 Create Account
 - Story: I want to identify myself within the application. Creating an account is a way to fullfil this.
@@ -86,14 +84,26 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Constraints:
 - Assumptions:
 
-#### 3.3.5 View/edit notebook
-- Story:
-- Description:
+#### 3.3.5 Notebook
+##### 3.3.5.1 View/edit notebook
+- Story: I wish I could be more organized. I've been stuffing my bookbag with loose papers and I lose them regularly. I may have to drop out of college because of this. If only they could be kept in a centralized digital location.
+- Description: A user may create a notebook for each server they are in. The contents would be saved in the cloud so they can access it anywhere they go.
 - Preconditions: Must have an account and be a part of a server
 - Postconditions: Save notebook if changes were made
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: User has a seperate notebook for each server they are part of. The notebook should be able to be saved manually. Optionally auto save the notebook after a few seconds of no new changes.
+- Constraints: 1 notebook per server for each individual user.
+- Assumptions: None  
+![View/ Edit Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Notebook%20Viewing_Editing.png)
+
+##### 3.3.5.2 Share notebook
+- Story: My classmate missed class and didn't get the notes. Since we are in the same server for the class I would like to be able to share the notes with them.
+- Description: A user of a server may share their notebook with other users of the same server. This would be viewable in a column that would show who all in the server shares their notes and the user would be able to choose any of them.
+- Preconditions: Must have an account and be a part of a server && Notebook must be shared with server.
+- Postconditions: None
+- Design Details: A user viewing a shared notebook may not make edits to the notebook, READ ONLY. 
+- Constraints: Only owner of notebook may edit the notebook, shared users may only view notes
+- Assumptions: None  
+![Share Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Notebook%20Sharing.png)
 
 #### 3.3.6 Calendar
 ##### 3.3.6.1 Create event
@@ -115,13 +125,14 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Assumptions:
 
 #### 3.3.8 Remove Users
-- Story:
-- Description:
-- Preconditions: Have users in a server
+- Story: There is someone being a nuisance in my server. It is distracting the other users from excelling in their academic career. As a teacher, I need a way to get these hooligans out.
+- Description: There should be the ability to remove a user from a server and possibly prevent them from being able to rejoin.
+- Preconditions: Have users in a server and be the owner of the server 
 - Postconditions: remove user from record of server
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: Admins should be the only ones allowed to remove users. The removed users should be banned and therefore not allowed to rejoin.
+- Constraints: None
+- Assumptions: None  
+![Share Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Remove%20User.png)
 
 #### 3.3.9 Delete Server
 - Story:
@@ -143,31 +154,18 @@ Our goal is to create a centralized location for collaboration in the classroom 
 
 ### 3.4 Minor Use Cases
 #### 3.4.1 Configure server permissions
-- Story:
-- Description:
+- Story: My server is getting huge and trying to moderate it by myself has become too much to handle. I need a way to allow other people to have some power to moderate.
+- Description: The server should be configurable to allow other users to have some abilities similar to the server owner.
 - Preconditions: None
 - Postconditions: The server preferences will be updated if anything changed.
-- Design Details:
-- Constraints:
-- Assumptions:
-
-#### 3.4.2 Set preferences/settings
-- Story:
-- Description:
-- Preconditions: Must have an account
-- Postconditions: Changes are saved if any were made
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: The owner should be the only one able to add/remove priveleges. The configurable permissions are the ability to remove users.
+- Constraints: The owner cannot be demoted by any lower priveleged member.
+- Assumptions: None
 
 
 ## 4.0 Systems
 ### 4.1 Architecture
-Note: Remove these directions and replace with content
-- diagram of architecture 
-- description of overall architecture and what is running on each component 
-- identify development, staging, and production environments 
-- scripts to deploy to staging & production 
+- [Software Requirements Specification](./software_requirements.md/#50-architecture)
 
 
 ## 5.0 Non Functional Requirements
