@@ -56,7 +56,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Postconditions: User gets access to the homepage screen
 - Design Details: Do not forget to enter valid account information.
 - Constraints: Can only enter alphanumeric characters for username.
-- Assumptions: none
+- Assumptions: none  
 ![Sequence Diagram for create account](./Design%20Files/Sequence%20Diagrams/Create_Account_SD.jpg))
 
 #### 3.3.2 User Login
@@ -66,7 +66,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Postconditions: none
 - Design Details: Enter your valid account information
 - Constraints: none
-- Assumptions: none
+- Assumptions: none  
 ![Sequence Diagram for User Login](./Design%20Files/Sequence%20Diagrams/User_Login_SD.jpg)
 
 #### 3.3.3 Create Vox Server
@@ -76,7 +76,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Postconditions: Server is established, User becomes the server admin of the created server. 
 - Design Details: Do not forget to enter a valid server name.
 - Constraints: Can only enter alphanumeric characters for server name.
-- Assumptions: A unique server admin is created and stored in the database.
+- Assumptions: A unique server admin is created and stored in the database.  
 ![Sequence Diagram for Create VOX Server](./Design%20Files/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
 
 #### 3.3.4 Chat on Servers
