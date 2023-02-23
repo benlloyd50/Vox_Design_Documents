@@ -1,11 +1,11 @@
 # Detailed Design Document
-# VOX - Realtime Groupchat App
+# VOX - Real-time Group Chat App
 
 February 24, 2023
 
 **Version** 1
 
-![System Context Diagram](./Images/small_VOXLOGO.png)
+![Logo](./Images/small_VOXLOGO.png)
 
 **Presented to**  
 Dr Schwesinger
