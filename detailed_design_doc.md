@@ -115,9 +115,9 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Description:
 - Preconditions: Must have an account
 - Postconditions: Event is added to calendar
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: Date, Description, either personal or server-based
+- Constraints:None
+- Assumptions:None
 
 ##### 3.3.6.2 Remove event 
 - Story:
