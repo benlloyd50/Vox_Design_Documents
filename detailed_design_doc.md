@@ -146,7 +146,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: This will delete the server and everything associated with it in the database.
 - Constraints: Only the server creater can delete the server.
 - Assumptions: None  
-![Delete a Server SD](./Sequence%20Diagrams/Delete_a_serverSD.png)
+![Delete a Server SD](./Images/Sequence%20Diagrams/Delete_a_serverSD.png)
 
 #### 3.3.10 Invite users to server
 - Story: I want to invite my friends to the server to chat with them.
@@ -154,9 +154,9 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Preconditions: Must have received a code 
 - Postconditions: Sends invite notification to user asking them to join the server. 
 - Design Details: Users will have a notification button which is a socket constantly looking for new incoming notifications. 
-- Constraints:
+- Constraints: Only users with an admin preference are able to invite other users to the server. This is iff the server is considered a `private` server.
 - Assumptions: None  
-![Invite a User](./Sequence%20Diagrams/inviteuserSD.png)
+![Invite a User](./Images/Sequence%20Diagrams/inviteuserSD.png)
 
 ### 3.4 Minor Use Cases
 #### 3.4.1 Configure server permissions
