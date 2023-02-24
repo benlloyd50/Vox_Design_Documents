@@ -55,7 +55,7 @@ The purpose of this document is to establish a common understanding between the 
 
 ## 3.1 Punch list
 The following items are still unresolved:
-- Light/Dark theme selection 
+- None
 
 ## Use Cases
 ### 3.1 Create Account

@@ -1,11 +1,11 @@
 # Detailed Design Document
-# VOX - Realtime Groupchat App
+# VOX - Real-time Group Chat App
 
 February 24, 2023
 
 **Version** 1
 
-![System Context Diagram](./Images/small_VOXLOGO.png)
+![Logo](./Images/small_VOXLOGO.png)
 
 **Presented to**  
 Dr Schwesinger
@@ -57,7 +57,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Do not forget to enter valid account information.
 - Constraints: Can only enter alphanumeric characters for username.
 - Assumptions: none  
-![Sequence Diagram for create account](./Design%20Files/Sequence%20Diagrams/Create_Account_SD.jpg))
+![Sequence Diagram for create account](./Images/Sequence%20Diagrams/Create_Account_SD.jpg))
 
 #### 3.3.2 User Login
 - Story: To keep using the application more than time, you can login into your account and be back where you left off.
@@ -67,7 +67,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Enter your valid account information
 - Constraints: none
 - Assumptions: none  
-![Sequence Diagram for User Login](./Design%20Files/Sequence%20Diagrams/User_Login_SD.jpg)
+![Sequence Diagram for User Login](./Images/Sequence%20Diagrams/User_Login_SD.jpg)
 
 #### 3.3.3 Create Vox Server
 - Story: To interact with another user, both users need to be in the same server. One user needs to create a server or be invited to one. If the user wants to be a server admin, a server must be created. Moreover, the first user of the application must create a server.
@@ -77,16 +77,17 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Do not forget to enter a valid server name.
 - Constraints: Can only enter alphanumeric characters for server name.
 - Assumptions: A unique server admin is created and stored in the database.  
-![Sequence Diagram for Create VOX Server](./Design%20Files/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
+![Sequence Diagram for Create VOX Server](./Images/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
 
 #### 3.3.4 Chat on Servers
-- Story:
-- Description:
+- Story: I want to ask a general question, but I don't know when the Professor is going to get back to me, hopefully one of my classsmates will be able to get back to me soon, I need a way to message everyone!
+- Description:The Server will have a general chat for everyone to communicate
 - Preconditions: Must have/be in a server
 - Postconditions: None
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: Message is sent within the chatbox of the Server
+- Constraints:None
+- Assumptions:None  
+![Chatting Sequence Diagram](./Images/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
 
 #### 3.3.5 Notebook
 ##### 3.3.5.1 View/edit notebook
@@ -111,22 +112,24 @@ Our goal is to create a centralized location for collaboration in the classroom 
 
 #### 3.3.6 Calendar
 ##### 3.3.6.1 Create event
-- Story:
-- Description:
-- Preconditions: Must have an account
+- Story:I am a professor that is having an assignemnt due this sunday, and I want to put it on the calendar so my pupils are aware of it.
+- Description:Add an event to the calendar either for personal planning or to let others know of it.
+- Preconditions: Must have an Account
 - Postconditions: Event is added to calendar
-- Design Details:
-- Constraints:
-- Assumptions:
+- Design Details: Date, Description, either personal or server-based
+- Constraints:None
+- Assumptions:None  
+![Create Event Sequence Diagram](./Images/Sequence%20Diagrams/Notebook%20Sharing.png)
 
 ##### 3.3.6.2 Remove event 
-- Story:
-- Description:
+- Story:We were going to have an exam on Friday, but my students are not ready for it, I need a way to remove it from the Calendar
+- Description: Delete an already-existing event from a calendar if plans change
 - Preconditions: Must have an existing event
-- Postconditions: Event is deleted from calendar
-- Design Details:
-- Constraints:
-- Assumptions:
+- Postconditions: Event is deleted from calendar, either server or personal
+- Design Details: None
+- Constraints:None
+- Assumptions:None  
+![Remove event Sequence Diagram](./Images/Sequence%20Diagrams/RemoveEventSequence.png)
 
 #### 3.3.8 Remove Users
 - Story: There is someone being a nuisance in my server. It is distracting the other users from excelling in their academic career. As a teacher, I need a way to get these hooligans out.
