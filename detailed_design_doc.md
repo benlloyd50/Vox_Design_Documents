@@ -119,7 +119,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Date, Description, either personal or server-based
 - Constraints:None
 - Assumptions:None  
-![Create Event Sequence Diagram](./Images/Sequence%20Diagrams/Notebook%20Sharing.png)
+![Create Event Sequence Diagram](./Images/Sequence%20Diagrams/CreateEventSequence.png)
 
 ##### 3.3.6.2 Remove event 
 - Story:We were going to have an exam on Friday, but my students are not ready for it, I need a way to remove it from the Calendar
