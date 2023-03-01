@@ -131,7 +131,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Assumptions:None  
 ![Remove event Sequence Diagram](./Images/Sequence%20Diagrams/RemoveEventSequence.png)
 
-#### 3.3.8 Remove Users
+#### 3.3.7 Remove Users
 - Story: There is someone being a nuisance in my server. It is distracting the other users from excelling in their academic career. As a teacher, I need a way to get these hooligans out.
 - Description: There should be the ability to remove a user from a server and possibly prevent them from being able to rejoin.
 - Preconditions: Have users in a server and be the owner of the server 
@@ -141,7 +141,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Assumptions: None  
 ![Share Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Remove%20User.png)
 
-#### 3.3.9 Delete Server
+#### 3.3.8 Delete Server
 - Story: No one uses my server anymore and there is no point of having it so I want to get rid of it.
 - Description: The admin of the server will select the settings option in the top right hand corner of their server page; once there they will be able to select `Delete Server` and will be prompted with a window to confirm this deletion. 
 - Preconditions: Be an admin of the server
@@ -151,7 +151,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Assumptions: None  
 ![Delete a Server SD](./Images/Sequence%20Diagrams/Delete_a_serverSD.png)
 
-#### 3.3.10 Invite users to server
+#### 3.3.9 Invite users to server
 - Story: I want to invite my friends to the server to chat with them.
 - Description: The admin of the server will select the settings option in the top right hand corner of their server page; Once there they will be able to select `Invite Users` and will be prompted with an input to enter a users name. 
 - Preconditions: Must have received a code 
