@@ -87,7 +87,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Message is sent within the chatbox of the Server
 - Constraints:None
 - Assumptions:None  
-![Chatting Sequence Diagram](./Images/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
+![Chatting Sequence Diagram](./Images/Sequence%20Diagrams/ChatOnServersSequence.png)
 
 #### 3.3.5 Notebook
 ##### 3.3.5.1 View/edit notebook
