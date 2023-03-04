@@ -3,7 +3,7 @@
 
 ### Test Title: Create Account
 #### Executed by:
-#### SRS Section Id:
+#### SRS Section Id: 3.1
 - Description: To login into the application, a user must be logged in. To do that, they must have an existing account by creating one.
 - Preconditions: None
 - Dependencies: If valid, account information gets saved in to the database.
@@ -15,7 +15,7 @@
 
 ### Test Title: User Login
 #### Executed by:
-#### SRS Section Id:
+#### SRS Section Id: 3.2
 - Description: To access the application features, a must be log in.
 - Preconditions: An account must exist
 - Dependencies: Verify the log in info with the one in database. On success, user gets access to the application features. Otherwise, a user must create an account to use the application.
@@ -27,7 +27,7 @@
 
 ### Test Title: Create Vox Server
 #### Executed by:
-#### SRS Section Id:
+#### SRS Section Id: 3.3
 - Description: To interact with another user, they both need to be in the same server. On way to do that is to create a vox server.
 - Preconditions: User must be logged in.
 - Dependencies: Database for holding server entries.
@@ -127,7 +127,7 @@
 
 ### Test Title: Delete Server
 #### Executed by:
-#### SRS Section Id:
+#### SRS Section Id: 3.10
 - Description: If you do not want any of your own created to exist. The server can simple be deleted.
 - Preconditions: Server must exist
 - Dependencies: Database for holding the server information and it's users information
@@ -140,7 +140,7 @@
 
 ### Test Title: Invite User to server
 #### Executed by:
-#### SRS Section Id:
+#### SRS Section Id: 3.11
 - Description: If you want to invite your friend to your gaming server, and talk about new games. This can simple be done by clicking on invite user in your server room.
 - Preconditions: A user must have their own server created.
 - Dependencies: Database for holding the server information and your friends information.
