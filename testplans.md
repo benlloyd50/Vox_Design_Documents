@@ -4,35 +4,38 @@
 ### Test Title: Create Account
 #### Executed by:
 #### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+- Description: To login into the application, a user must be logged in. To do that, they must have an existing account by creating one.
+- Preconditions: None
+- Dependencies: If valid, account information gets saved in to the database.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Click on register button|Any alphabets, 0-9, or .|Account registered||||
+|2|Click on register button|Register an account. Then, try to register the account again| An error message saying that user or password exists||||
 
 ### Test Title: User Login
 #### Executed by:
 #### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+- Description: To access the application features, a must be log in.
+- Preconditions: An account must exist
+- Dependencies: Verify the log in info with the one in database. On success, user gets access to the application features. Otherwise, a user must create an account to use the application.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Click on login button|Enter an account information that has been registered successfully|Login successful||||
+|2|Click on login button|Enter any account information that has not been registered already|Login unsuccessful||||
 
 ### Test Title: Create Vox Server
 #### Executed by:
 #### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+- Description: To interact with another user, they both need to be in the same server. On way to do that is to create a vox server.
+- Preconditions: User must be logged in.
+- Dependencies: Database for holding server entries.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login in with a valid account||||||
+||Click on create server|Enter a name for the server|Server created||||
 
 ### Test Title: Chat on Servers
 #### Executed by:
@@ -125,21 +128,25 @@
 ### Test Title: Delete Server
 #### Executed by:
 #### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+- Description: If you do not want any of your own created to exist. The server can simple be deleted.
+- Preconditions: Server must exist
+- Dependencies: Database for holding the server information and it's users information
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login into your account||||||
+||Click on a server that you created||||||
+||Click on the delete button||Server is deleted||||
 
 ### Test Title: Invite User to server
 #### Executed by:
 #### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+- Description: If you want to invite your friend to your gaming server, and talk about new games. This can simple be done by clicking on invite user in your server room.
+- Preconditions: A user must have their own server created.
+- Dependencies: Database for holding the server information and your friends information.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login into your account||||||
+||Click on a server that you created||||||
+||Click on invite button|Enter the username of the new user you want to invite|User is added to the server||||
