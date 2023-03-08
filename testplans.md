@@ -39,14 +39,17 @@
 
 ### Test Title: Chat on Servers
 #### Executed by:
-#### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+#### SRS Section Id: 3.4
+- Description: If you need to interact with other users, you can do that by messaging them in the chat area. 
+- Preconditions: Must be/have an server
+- Dependencies: Database for holding server entries.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login in with a valid account||||||
+||Click on an existing server||||||
+||Click on the textbox|Enter any text|Message is sent and appears in the box above||||
+|2|Ask your friend in the same server to send you a message||Message appears on the box above||||
 
 ### Test Title: View/Edit Notebook
 #### Executed by:
@@ -92,25 +95,29 @@
 
 ### Test Title: Create Event
 #### Executed by:
-#### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+#### SRS Section Id: 3.6.1
+- Description: If you instructor gives you an important due date for a project. You would probably want to mark that in a calendar. 
+- Preconditions: Must have an existing account
+- Dependencies: Database for holding calendar events
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login in with a valid account||||||
+||Hover over the day when your assignment is due||||||
+||Click on add event button|Enter a description|Event gets saved in the calendar||||
 
 ### Test Title: Remove Event
 #### Executed by:
-#### SRS Section Id:
-- Description:
-- Preconditions:
-- Dependencies:
+#### SRS Section Id: 3.6.2
+- Description: If your assignments due date has passed and you don't want that event to exist in your calendar. It can be removed from the calendar.
+- Preconditions: Must have an existing account
+- Dependencies: Database for holding the calendar events
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|change|me|not|the|above|line|-|
+|1|Login in with a valid account||||||
+||Hover over that event in your calendar||||||
+||Click on delete button||Event is deleted from the calendar||||
 
 ### Test Title: Remove Users
 #### Executed by:
