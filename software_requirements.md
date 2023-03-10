@@ -2,6 +2,7 @@
 ## Revision History
 |Date Created|Author|Distributed to|Version|
 |----|:----:|:-----------:|:-----:|
+|3/10/2023|Team|Team & Supervisor|4|
 |2/15/2023|Team|Team & Supervisor|3|
 |1/27/2023|Team|Team & Supervisor|3|
 |12/8/2022|Team|Team & Supervisor|2|
@@ -45,11 +46,9 @@ The purpose of this document is to establish a common understanding between the 
 - Create Calendar Events
 - Invite Users
 - Create a Server
-- Set preferences
 
 #### As a server admin I want to:
 - Do everything that a user can do 
-- Configure my server's permissions
 - Remove users from my server
 - Delete my server
 
@@ -138,29 +137,7 @@ The following items are still unresolved:
 - Requirements: To update all users invited to event
 - Interface Requirements: Home page screen
 
-### 3.7 Set preferences/settings
-- Actors: User and Server Admin
-- Preconditions: Must have an account
-- Flow of events:
-  1. Open settings menu
-  2. Change settings
-  3. Apply changes
-- Postconditions: Changes are saved if any were made
-- Requirements: Edit profile, application settings
-- Interface Requirements: Settings screen
-
-### 3.8 Configure server permissions
-- Actors: Server Admin
-- Preconditions: None
-- Flow of events:
-  1. Open server settings
-  2. Configure settings
-  3. Save settings
-- Postconditions: The server preferences will be updated if anything changed.
-- Requirements: None  
-- Interface Requirements: Server configuration screen
-
-### 3.9 Remove Users
+### 3.7 Remove Users
 - Actors: Server Admin
 - Preconditions: Have users in a server
 - Flow of events:
@@ -171,7 +148,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, message to confirm
 
-### 3.10 Delete Server
+### 3.8 Delete Server
 - Actors: Server Admin
 - Preconditions: None
 - Flow of events:
@@ -182,7 +159,7 @@ The following items are still unresolved:
 - Requirements: None
 - Interface Requirements: Server screen, setting screen, message to confirm
 
-### 3.11 Invite users to server
+### 3.9 Invite users to server
 - Actors: User and Server Admin
 - Preconditions: Must have received a code 
 - Flow of events:
@@ -204,7 +181,6 @@ The following items are still unresolved:
 
 ### 4.3 Performance 
 - Responses sent between users should be received in **< 500 ms**
-- Server will have an uptime of **99.9%**
 - For self testing purposes the application can be self hosted and ran without external parties needing to set up anything
 - We would like to support up to 10 concurrent users. We believe this is enough to demonstrate the features listed and provide a better proof of concept before scaling the application would be required.
 
