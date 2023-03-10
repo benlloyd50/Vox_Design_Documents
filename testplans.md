@@ -34,7 +34,7 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login in with a valid account||||||
+|1|Login in with a valid account||Move to the homepage||||
 |2|Click on create server|Enter a name for the server|Server created||||
 
 ### 4. Test Title: Chat on Servers
@@ -46,8 +46,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login in with a valid account||||||
-|2|Click on an existing server||||||
+|1|Login in with a valid account||Moved to the homepage||||
+|2|Click on an existing server||Moved to that server page||||
 |3|Click on the textbox|Enter any text|Message is sent and appears in the box above||||
 |4|Ask your friend in the same server to send you a message||Message appears on the box above||||
 
@@ -102,8 +102,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login in with a valid account||||||
-|2|Hover over the day when your assignment is due||||||
+|1|Login in with a valid account||Moved to the homepage||||
+|2|Hover over the day when your assignment is due||Cursor is on that day in the Calendar||||
 |3|Click on add event button|Enter a description|Event gets saved in the calendar||||
 
 ### 9. Test Title: Remove Event
@@ -115,8 +115,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login in with a valid account||||||
-|2|Hover over that event in your calendar||||||
+|1|Login in with a valid account||Moved to the homepage||||
+|2|Hover over that event in your calendar||Cursor is on that day in the Calendar||||
 |3|Click on delete button||Event is deleted from the calendar||||
 
 ### 10. Test Title: Remove Users
@@ -141,8 +141,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login into your account||||||
-|2|Click on a server that you created||||||
+|1|Login into your account||Moved to the homepage||||
+|2|Click on a server that you created||Moved to that server page||||
 |3|Click on the delete button||Server is deleted||||
 
 ### 12. Test Title: Invite User to server
@@ -154,8 +154,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login into your account||||||
-|2|Click on a server that you created||||||
+|1|Login into your account||Moved to the homepage||||
+|2|Click on a server that you created||Moved to that server page||||
 |3|Click on invite button|Enter the username of the new user you want to invite|User is added to the server||||
 
 
