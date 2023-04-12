@@ -1,9 +1,9 @@
 # Detailed Design Document
 # VOX - Real-time Group Chat App
 
-February 24, 2023
+May 2nd, 2023
 
-**Version** 1
+**Version** 2
 
 ![Logo](./Images/small_VOXLOGO.png)
 
@@ -13,18 +13,18 @@ Dr Schwesinger
 **Submitted By:**  
 Hamad Ahmed  
 Gabe Leffew  
-Jesse Fullington  
 Benjamin Lloyd  
 
 
 ## Revision History
 | Date Created  | Version # |
 | ------------- |:---------:|
+| 4/12/2023     | 2         |
 | 2/15/2023     | 1         |
 
 
 ## 1.0 Introduction
-Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
+Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
 
 ## 1.2 Scope
 
@@ -57,7 +57,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Design Details: Do not forget to enter valid account information.
 - Constraints: Can only enter alphanumeric characters for username.
 - Assumptions: none  
-![Sequence Diagram for create account](./Images/Sequence%20Diagrams/Create_Account_SD.jpg))
+![Sequence Diagram for create account](./Images/Sequence%20Diagrams/Create_Account_SD.jpg)
 
 #### 3.3.2 User Login
 - Story: To keep using the application more than time, you can login into your account and be back where you left off.
@@ -103,7 +103,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ##### 3.3.5.2 Share notebook
 - Story: My classmate missed class and didn't get the notes. Since we are in the same server for the class I would like to be able to share the notes with them.
 - Description: A user of a server may share their notebook with other users of the same server. This would be viewable in a column that would show who all in the server shares their notes and the user would be able to choose any of them.
-- Preconditions: Must have an account and be a part of a server && Notebook must be shared with server.
+- Preconditions: Must have an account and be a part of a server 
 - Postconditions: None
 - Design Details: A user viewing a shared notebook may not make edits to the notebook, READ ONLY. 
 - Constraints: Only owner of notebook may edit the notebook, shared users may only view notes
@@ -113,7 +113,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 #### 3.3.6 Calendar
 ##### 3.3.6.1 Create event
 - Story:I am a professor that is having an assignemnt due this sunday, and I want to put it on the calendar so my pupils are aware of it.
-- Description:Add an event to the calendar either for personal planning or to let others know of it.
+- Description:Add an event to the calendar either for personal planning or for a whole server to see
 - Preconditions: Must have an Account
 - Postconditions: Event is added to calendar
 - Design Details: Date, Description, either personal or server-based
@@ -122,7 +122,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ![Create Event Sequence Diagram](./Images/Sequence%20Diagrams/CreateEventSequence.png)
 
 ##### 3.3.6.2 Remove event 
-- Story:We were going to have an exam on Friday, but my students are not ready for it, I need a way to remove it from the Calendar
+- Story: We were going to have an exam on Friday, but my students are not ready for it, I need a way to remove it from the Calendar
 - Description: Delete an already-existing event from a calendar if plans change
 - Preconditions: Must have an existing event
 - Postconditions: Event is deleted from calendar, either server or personal
@@ -160,16 +160,6 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Constraints: Only users with an admin preference are able to invite other users to the server. This is iff the server is considered a `private` server.
 - Assumptions: None  
 ![Invite a User](./Images/Sequence%20Diagrams/inviteuserSD.png)
-
-### 3.4 Minor Use Cases
-#### 3.4.1 Configure server permissions
-- Story: My server is getting huge and trying to moderate it by myself has become too much to handle. I need a way to allow other people to have some power to moderate.
-- Description: The server should be configurable to allow other users to have some abilities similar to the server owner.
-- Preconditions: None
-- Postconditions: The server preferences will be updated if anything changed.
-- Design Details: The owner should be the only one able to add/remove priveleges. The configurable permissions are the ability to remove users.
-- Constraints: The owner cannot be demoted by any lower priveleged member.
-- Assumptions: None
 
 
 ## 4.0 Systems
