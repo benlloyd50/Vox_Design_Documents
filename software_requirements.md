@@ -9,7 +9,7 @@
 |10/24/2022|Team|Team & Supervisor|1|
 
 ## 1.0 Introduction
-Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Manage your groups and create a hierarchy as you see fit, whether you want one to rule them all or total anarchy. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
+Our goal is to create a centralized location for collaboration in the classroom setting and beyond. Schedule events for your team and find the best team to tackle your toughest goals. Save notes for classes and share with your group to always be on the same page. Create servers for any group like a club, a group of friends, or your tri-annual family reunion.
 
 The purpose of this document is to establish a common understanding between the development team and supervisor. Included are all our diagrams and documentation outlining what is needed to consider this a complete project. In turn, this document will be a single source of truth to make sure everyone is up to date on any changes. Along with requirements for project is also who will be responsible for what. This document may change, and revision will be noted above and tracked with Git to view previous information. 
 
@@ -27,14 +27,14 @@ The purpose of this document is to establish a common understanding between the 
 ![Pert Chart](./Images/pertchart.png)
 
 ### Responsibility Matrix
-| Skills          | Hamad | Gabe | Ben | Jesse| 
-| --------------- |:-----:|:----:|:---:|:----:|
-| Git             | X | X | X | X
+| Skills          | Hamad | Gabe | Ben | 
+| --------------- |:-----:|:----:|:---:|
+| Git             | X | X | X | 
 | Frontend        | X | X |   | 
-| Backend         |   |   | X | X
+| Backend         |   |   | X | 
 | UI              |   |   | X | 
-| Database (SQL)  | X | X | X | X
-| HTML/CSS        | X | X |   | X
+| Database (SQL)  | X | X | X | 
+| HTML/CSS        | X | X |   | 
 | Web server      | X | X | X | 
 
 ## 3.0 Requirements
