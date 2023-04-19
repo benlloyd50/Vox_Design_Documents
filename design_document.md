@@ -59,14 +59,14 @@ See `/Design Files/WireFrame` for wire frames
 
 ## Project Organization
 ### Responsibility Matrix
-| Skills          | Hamad | Gabe | Ben | Jesse| 
-| --------------- |:-----:|:----:|:---:|:----:|
-| Git             | X | X | X | X
+| Skills          | Hamad | Gabe | Ben |
+| --------------- |:-----:|:----:|:---:|
+| Git             | X | X | X |
 | Frontend        | X | X |   | 
-| Backend         |   |   | X | X
-| UI              |   |   | X | 
-| Database (SQL)  | X | X | X | X
-| HTML/CSS        | X | X |   | X
+| Backend         |   |X   | X | 
+| UI              |   |X  | X | 
+| Database (SQL)  | X | X | X | 
+| HTML/CSS        | X | X |   | 
 | Web server      | X | X | X | 
 
 ## Validation Plan
