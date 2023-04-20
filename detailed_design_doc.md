@@ -19,6 +19,7 @@ Benjamin Lloyd
 ## Revision History
 | Date Created  | Version # |
 | ------------- |:---------:|
+| 4/20/2023     | 3         |
 | 4/12/2023     | 2         |
 | 2/15/2023     | 1         |
 
@@ -60,8 +61,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ![Sequence Diagram for create account](./Images/Sequence%20Diagrams/Create_Account_SD.jpg)
 
 #### 3.3.2 User Login
-- Story: To keep using the application more than time, you can login into your account and be back where you left off.
-- Description: User visits the website after they already have an account. User would hit the login button, and enter their account information to log in. Then, they would taken to the homepage.
+- Story: To keep using the application more than time, you can login into your account and continue where you left off.
+- Description: User visits the website after they already have an account. User would hit the login button, and enter their account information to log in. Then, they would be taken to the homepage.
 - Preconditions: Must have an existing account
 - Postconditions: none
 - Design Details: Enter your valid account information
@@ -70,22 +71,22 @@ Our goal is to create a centralized location for collaboration in the classroom 
 ![Sequence Diagram for User Login](./Images/Sequence%20Diagrams/User_Login_SD.jpg)
 
 #### 3.3.3 Create Vox Server
-- Story: To interact with another user, both users need to be in the same server. One user needs to create a server or be invited to one. If the user wants to be a server admin, a server must be created. Moreover, the first user of the application must create a server.
-- Description: After the user logs in to their account, they will arrive at the homepage. On the left panel, the user would click create server button, and be taken to the create server page. Then, the user fills the information with the valid information. Then, a server is created.
+- Story: To interact with another user, both users need to be in the same server. One user needs to create a server or be invited to one. If the user wants to be a server admin, they must create a server themself. Moreover, the first user of the application must create a server.
+- Description: After the user logs in to their account, they will arrive at the homepage. On the left panel, the user would fill in a textbox and click `Create`. Then, a server is created with the user as the admin and no pre-existing users.
 - Preconditions: Must have an existing account
-- Postconditions: Server is established, User becomes the server admin of the created server. 
+- Postconditions: Server is created in db, user becomes the server admin of the created server. 
 - Design Details: Do not forget to enter a valid server name.
-- Constraints: Can only enter alphanumeric characters for server name.
-- Assumptions: A unique server admin is created and stored in the database.  
+- Constraints: Can only enter alphanumeric and spaces characters for server name but not exclusively whitespace.
+- Assumptions: None  
 ![Sequence Diagram for Create VOX Server](./Images/Sequence%20Diagrams/Create_VOX_Server_SD.jpg)
 
 #### 3.3.4 Chat on Servers
 - Story: I want to ask a general question, but I don't know when the Professor is going to get back to me, hopefully one of my classsmates will be able to get back to me soon, I need a way to message everyone!
 - Description:The Server will have a general chat for everyone to communicate
-- Preconditions: Must have/be in a server
+- Preconditions: Must be in a server
 - Postconditions: None
-- Design Details: Message is sent within the chatbox of the Server
-- Constraints:None
+- Design Details: Message is pushed through the socket for a live update of whoever is in the server at the time and the message is sent to the database for users to see if they join later.
+- Constraints: Message will be converted to ascii so no special symbols can be used.
 - Assumptions:None  
 ![Chatting Sequence Diagram](./Images/Sequence%20Diagrams/ChatOnServersSequence.png)
 
@@ -95,8 +96,8 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Description: A user may create a notebook for each server they are in. The contents would be saved in the cloud so they can access it anywhere they go.
 - Preconditions: Must have an account and be a part of a server
 - Postconditions: Save notebook if changes were made
-- Design Details: User has a seperate notebook for each server they are part of. The notebook should be able to be saved manually. Optionally auto save the notebook after a few seconds of no new changes.
-- Constraints: 1 notebook per server for each individual user.
+- Design Details: User has a seperate notebooks for each server they are part of. The notebook should be able to be saved manually. 
+- Constraints: None
 - Assumptions: None  
 ![View/ Edit Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Notebook%20Viewing_Editing.png)
 
@@ -117,7 +118,7 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Preconditions: Must have an Account
 - Postconditions: Event is added to calendar
 - Design Details: Date, Description, either personal or server-based
-- Constraints:None
+- Constraints: If the event is for a server then only the admin may create the event.
 - Assumptions:None  
 ![Create Event Sequence Diagram](./Images/Sequence%20Diagrams/CreateEventSequence.png)
 
@@ -125,18 +126,18 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Story: We were going to have an exam on Friday, but my students are not ready for it, I need a way to remove it from the Calendar
 - Description: Delete an already-existing event from a calendar if plans change
 - Preconditions: Must have an existing event
-- Postconditions: Event is deleted from calendar, either server or personal
+- Postconditions: Event is deleted from calendar and the record of the server in the db
 - Design Details: None
-- Constraints:None
+- Constraints: Only server admins may remove server events.
 - Assumptions:None  
 ![Remove event Sequence Diagram](./Images/Sequence%20Diagrams/RemoveEventSequence.png)
 
 #### 3.3.7 Remove Users
 - Story: There is someone being a nuisance in my server. It is distracting the other users from excelling in their academic career. As a teacher, I need a way to get these hooligans out.
-- Description: There should be the ability to remove a user from a server and possibly prevent them from being able to rejoin.
+- Description: There should be the ability to remove a user from a server.
 - Preconditions: Have users in a server and be the owner of the server 
-- Postconditions: remove user from record of server
-- Design Details: Admins should be the only ones allowed to remove users. The removed users should be banned and therefore not allowed to rejoin.
+- Postconditions: Remove user from record of server along with their messages and notebooks.
+- Design Details: Admins should be the only ones allowed to remove users.
 - Constraints: None
 - Assumptions: None  
 ![Share Notebook Sequence Diagram](./Images/Sequence%20Diagrams/Remove%20User.png)
@@ -145,19 +146,19 @@ Our goal is to create a centralized location for collaboration in the classroom 
 - Story: No one uses my server anymore and there is no point of having it so I want to get rid of it.
 - Description: The admin of the server will select the settings option in the top right hand corner of their server page; once there they will be able to select `Delete Server` and will be prompted with a window to confirm this deletion. 
 - Preconditions: Be an admin of the server
-- Postconditions: deletes the server 
+- Postconditions: Deletes the server and any records in the db related to the server including messages and notebooks.
 - Design Details: This will delete the server and everything associated with it in the database.
-- Constraints: Only the server creater can delete the server.
+- Constraints: Only the server owner can delete the server.
 - Assumptions: None  
 ![Delete a Server SD](./Images/Sequence%20Diagrams/Delete_a_serverSD.png)
 
 #### 3.3.9 Invite users to server
 - Story: I want to invite my friends to the server to chat with them.
-- Description: The admin of the server will select the settings option in the top right hand corner of their server page; Once there they will be able to select `Invite Users` and will be prompted with an input to enter a users name. 
-- Preconditions: Must have received a code 
-- Postconditions: Sends invite notification to user asking them to join the server. 
-- Design Details: Users will have a notification button which is a socket constantly looking for new incoming notifications. 
-- Constraints: Only users with an admin preference are able to invite other users to the server. This is iff the server is considered a `private` server.
+- Description: The admin of the server will select the settings option in the top right hand corner of their server page; they can then get an invite code then can send to their friends to join the server.
+- Preconditions: None 
+- Postconditions: None
+- Design Details: The invite code is only accessible to the server admin and must be distributed by them outside of the VOX application.
+- Constraints: Only the server owner is able to invite other users to the server.
 - Assumptions: None  
 ![Invite a User](./Images/Sequence%20Diagrams/inviteuserSD.png)
 
