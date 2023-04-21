@@ -63,7 +63,7 @@
 |-:|-|-|-|-|-|-|
 |1| Open notebook in server | User credentials and DB | The user should recieve their notes from the db if any | | | |
 |2| Edit notebook and make changes if needed | | | | | This step is optional since they may not have changes to make |
-|3| Close notebook | Notebook entry will be sent to DB | | | | PUT (Update or Create) the notebook entry |
+|3| Close/Save notebook | Notebook entry will be sent to DB | | | | PUT (Update or Create) the notebook entry |
 
 ### 6. Test Title: View Shared Notebook
 #### Executed by:
