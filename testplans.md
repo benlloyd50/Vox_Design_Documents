@@ -90,7 +90,7 @@
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1| Open notebook in server | User credentials and DB | To be able to see their notebook | | | |
-|2| Enable sharing | | User checks option to enable sharing on notebook | | | |
+|2| Enable sharing | | User clicks option to enable sharing on notebook | | | |
 |3| Close notes | | Notebook is updated in DB to enable sharing | | | |
 
 ### 8. Test Title: Create Event
