@@ -110,53 +110,54 @@
 #### Executed by:
 #### SRS Section Id: 3.6.2
 - Description: If your assignments due date has passed and you don't want that event to exist in your calendar. It can be removed from the calendar.
-- Preconditions: Must have an existing account
+- Preconditions: Must have an existing account and if the event is for a server then they must be the owner
 - Dependencies: Database for holding the calendar events
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1|Login in with a valid account||Moved to the homepage||||
-|2|Hover over that event in your calendar||Cursor is on that day in the Calendar||||
-|3|Click on delete button||Event is deleted from the calendar||||
+|2|Click `Remove Personal Event` on homepage||Can see the existing personal events||||
+|3|Click on event you want to delete||Event is deleted from the calendar, changes must be refreshed||||
 
 ### 10. Test Title: Remove Users
 #### Executed by:
 #### SRS Section Id: 3.7
-- Description: There should be the ability to remove a user from a server and possibly prevent them from being able to rejoin.
+- Description: There should be the ability to remove a user from a server
 - Preconditions: Have users in a server other than the owner and be the owner of the server
 - Dependencies: Database containing the server information
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1| Go to server| User credentials and DB | To see the users of a server | | | |
-|2| Select user and click remove | | The user will get a confirmation on removing the user | | | |
-|3| Confirm removal | | The user will no longer appear in the server | | | |
+|2| Click `Remove Users` in hamburger menu | | See existing members of the server except for the owner| | | |
+|3| Click user to remove from server | | The user will no longer be able to chat in the server | | | |
 
 ### 11. Test Title: Delete Server
 #### Executed by:
 #### SRS Section Id: 3.8
-- Description: If you do not want any of your own created to exist. The server can simple be deleted.
-- Preconditions: Server must exist
+- Description: If the server you created is no longer needed then you can delete it.
+- Preconditions: Server must exist already and user must be the owner
 - Dependencies: Database for holding the server information and it's users information
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1|Login into your account||Moved to the homepage||||
 |2|Click on a server that you created||Moved to that server page||||
-|3|Click on the delete button||Server is deleted||||
+|3|Click on the delete button in hamburger menu| Confirmation for deletion|Server is deleted||||
 
 ### 12. Test Title: Invite User to server
 #### Executed by:
 #### SRS Section Id: 3.9
-- Description: If you want to invite your friend to your gaming server, and talk about new games. This can simple be done by clicking on invite user in your server room.
-- Preconditions: A user must have their own server created.
+- Description: If you want to invite your friend to your gaming server, and talk about new games. This can simple be done by sharing your invite code.
+- Preconditions: A user can only invite if they are the server owner
 - Dependencies: Database for holding the server information and your friends information.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1|Login into your account||Moved to the homepage||||
 |2|Click on a server that you created||Moved to that server page||||
-|3|Click on invite button|Enter the username of the new user you want to invite|User is added to the server||||
+|3|Click on invite button| The invite code | User has code copied to clipboard ||||
+|4|Send Invite Code to friend | | Friend can enter code and join your server||||
 
 
 ## Non functional Requirements
