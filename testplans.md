@@ -10,8 +10,12 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Click on register button|Any alphabets, 0-9, or .|Account registered||||
-|2|Click on register button|Register an account. Then, try to register the account again| An error message saying that user or password exists||||
+|1.1|Click on register button||Redirected to register form page||||
+|1.2|Enter your account information|Any alphabets or digits|||||
+|1.3|Click on register button||Redirected to the homepage||Account is registered||
+|2.1|Click the register button||Redirected to register form page||||
+|2.2|Enter invalid account information|Symbols such as . or !|||||
+|2.3|Click on register button||An error message pops up indicating the user to enter valid information||||
 
 ### 2. Test Title: User Login
 #### Executed by:
@@ -22,8 +26,12 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Click on login button|Enter an account information that has been registered successfully|Login successful||||
-|2|Click on login button|Enter any account information that has not been registered already|Login unsuccessful||||
+|1.1|Click on login button||Redirected to the login form page||||
+|1.2|Enter your account information|Information that was used to register the account|||||
+|1.3|Click on login button||Redirected to the homepage||Account is registered||
+|2.1|Click the login button||Redirected to login form page||||
+|2.2|Enter invalid account information|Account that has not been registered yet|||||
+|2.3|Click on login button||An error message pops up saying that the username and password do not match||||
 
 ### 3. Test Title: Create Vox Server
 #### Executed by:
@@ -34,8 +42,8 @@
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1|Login in with a valid account||Move to the homepage||||
-|2|Click on create server|Enter a name for the server|Server created||||
+|1.1|In the text box above the create button, enter your server name|Any character|||||
+|1.2|Click on create server||A Popup appears indicating that server is created||Server created||
 
 ### 4. Test Title: Chat on Servers
 #### Executed by:
@@ -159,7 +167,7 @@
 |3|Click on invite button|Enter the username of the new user you want to invite|User is added to the server||||
 
 
-## Non functional Requirements
+ ## Non functional Requirements
 ### 13. SSL Certificate
 - This will be tested by opening the webpage using HTTPS, if this doesn't work then we know we do not have a SSL certificate for the webserver.
 
