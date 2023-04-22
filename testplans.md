@@ -54,31 +54,30 @@
 ### 5. Test Title: View/Edit Notebook
 #### Executed by:
 #### SRS Section Id: 3.5.1
-- Description: A user may create a notebook for each server they are in. 
-    The contents should be able to be saved manually or when they close the notebook.
-- Preconditions: Must have an account and be part of a server
-- Dependencies: Database for holding notebook entries
+- Description: A user may create notebooks for each server they are in. 
+    The contents of the notebook are saved by the user manually by clicking the save notebook button.
+- Preconditions: The user must have an account and be part of a server.
+- Dependencies: Database for holding notebook entries.
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1| Open notebook in server | User credentials and DB | The user should recieve their notes from the db if any | | | |
 |2| Edit notebook and make changes if needed | | | | | This step is optional since they may not have changes to make |
-|3| Close/Save notebook | Notebook entry will be sent to DB | | | | PUT (Update or Create) the notebook entry |
+|3| Save notebook | Notebook entry will be sent to DB | | | | POST on intitial save, UPDATE on saves after the intial|
 
 ### 6. Test Title: View Shared Notebook
 #### Executed by:
 #### SRS Section Id: 3.5.1
 - Description: A user of a server may share their notebook with other users of the same server. 
-    This would be viewable in a column that would show who all in the server shares their notes and the 
-    user would be able to choose any of them.
+    When a notebook is shared it's title is visible to all users in the server, and users can open the notebook in a readonly mode.
 - Preconditions: A user must be part of a server and another user must have shared their notebook
 - Dependencies: Database for holding notebook entries
 
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
-|1| Open shared notebook in server | User credentials and DB | The user should recieve a copy of another person's notes| | | This may be outdated if the other user is updating the notes, this is intended |
+|1| Open shared notebook in server | User credentials and DB | The user should recieve a copy of another person's notes| | | This may be outdated if the other user is updating their notes, the shared notebook won't be updated until the person who shared the notebook saves it again. |
 |2| View notes | | | | | READ ONLY on other user's notes|
-|3| Close notes | | | | | Does not update entry |
+|3| Close notes/switch to other notes | | | | | A user can switch to another notebook, or click clear to start creating their own |
 
 ### 7. Test Title: Share Notebook with Server
 #### Executed by:
@@ -91,7 +90,20 @@
 |-:|-|-|-|-|-|-|
 |1| Open notebook in server | User credentials and DB | To be able to see their notebook | | | |
 |2| Enable sharing | | User clicks option to enable sharing on notebook | | | |
-|3| Close notes | | Notebook is updated in DB to enable sharing | | | |
+|3| Update the contents and save | | The shared notebook should be updated for other users. | | | |
+
+### 7. Test Title: Create/save Notebook
+#### Executed by:
+#### SRS Section Id: 3.5.2
+- Description: A user of a server may create a notebook and save it.
+- Preconditions: A user must be part of a server
+- Dependencies: Database for holding notebook entries
+
+| Step # | Test Step | Data | Expected | Actual | Status | Notes |
+|-:|-|-|-|-|-|-|
+|1| Open notepad |  | Notepad opens and the user can start typing notes| | | |
+|2| Save notepad | User, Server, Name, Contents | The notepad is saved into the database and pops up in your saved notebooks tab | | | |
+|3| Update the contents and save | | The notebook is updated with the newly saved contents | | | |
 
 ### 8. Test Title: Create Event
 #### Executed by:
