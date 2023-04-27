@@ -28,7 +28,7 @@
 |-:|-|-|-|-|-|-|
 |1.1|Click on login button||Redirected to the login form page||||
 |1.2|Enter your account information|Information that was used to register the account|||||
-|1.3|Click on login button||Redirected to the homepage||Account is registered||
+|1.3|Click on login button||Redirected to the homepage and account is registered||||
 |2.1|Click the login button||Redirected to login form page||||
 |2.2|Enter invalid account information|Account that has not been registered yet|||||
 |2.3|Click on login button||An error message pops up saying that the username and password do not match||||
@@ -43,7 +43,7 @@
 | Step # | Test Step | Data | Expected | Actual | Status | Notes |
 |-:|-|-|-|-|-|-|
 |1.1|In the text box above the create button, enter your server name|Any character|||||
-|1.2|Click on create server||A Popup appears indicating that server is created||Server created||
+|1.2|Click on create server||A Popup appears indicating that server is created and server created||||
 
 ### 4. Test Title: Chat on Servers
 #### Executed by:
